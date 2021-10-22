@@ -14,4 +14,9 @@ public class mainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void VolverMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+    }
 }
