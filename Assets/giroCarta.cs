@@ -7,7 +7,7 @@ public class giroCarta : MonoBehaviour
 
     private SpriteRenderer rend;
 
-    [SerializedField]
+    [SerializeField]
 
     private Sprite faceSprite, backSprite;
 
@@ -49,14 +49,24 @@ public class giroCarta : MonoBehaviour
         }
         if (facedUp)
         {
-            transform.rotation = Quaternion.Euler(0f, i, 0f);
-            if (i == 90f)
+            for (float i = 180f; i >= 0f; i -= 10f)
             {
-                rend.sprite = backSprite;
+                transform.rotation = Quaternion.Euler(0f, i, 0f);
+                if (i == 90f)
+                {
+                    rend.sprite = backSprite;
+                }
+                yield return new WaitForSeconds(0.01f);
             }
-            yield return new WaitForSeconds(0.01f);
+                
         }
-    } 
+        coroutineAllowed = true;
+
+        facedUp = !facedUp;
+
+    }
+
+    
     
 
 
