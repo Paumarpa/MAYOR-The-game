@@ -294,7 +294,7 @@ MonoBehaviour:
     nombreCarta: 
     descripcionCarta: 
     thisImagen: {fileID: 0}
-  thisId: 4
+  thisId: 1
   id: 0
   nombreCarta: 
   descripcionCarta: 
@@ -455,7 +455,7 @@ RectTransform:
   m_GameObject: {fileID: 1352579537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 1}
+  m_LocalScale: {x: 0.0006, y: 0.0006524892, z: 1}
   m_Children: []
   m_Father: {fileID: 2105946087}
   m_RootOrder: 0
@@ -487,16 +487,16 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 150
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Descripcion
 --- !u!222 &1352579540
@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397612135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 314, y: 237, z: -10}
+  m_LocalPosition: {x: 343, y: 200, z: -985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
