@@ -13,6 +13,9 @@ public class ThisCarta : MonoBehaviour
     public string nombreCarta;
     public string descripcionCarta;
 
+    public Sprite thisSprite;
+    public Image thatImage;
+
     public Text nameText;
     public Text descText;
     // Start is called before the first frame update
@@ -29,7 +32,11 @@ public class ThisCarta : MonoBehaviour
         nombreCarta = thisCarta[0].nombreCarta;
         descripcionCarta = thisCarta[0].descripcionCarta;
 
+        thisSprite = thisCarta[0].thisImagen;
+
         nameText.text = "" + nombreCarta;
         descText.text = "" + descripcionCarta;
+
+        thatImage.sprite = thisSprite;
     }
 }
