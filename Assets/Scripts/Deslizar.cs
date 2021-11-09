@@ -36,7 +36,6 @@ public class Deslizar : MonoBehaviour
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log("kk");
                 cs.izquierda();
             }
 
@@ -54,7 +53,7 @@ public class Deslizar : MonoBehaviour
         {
             if (carta.transform.position.x > 2)
             {
-                Debug.Log("caca");
+                
                 cs.derecha();
             }
         }

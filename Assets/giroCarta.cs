@@ -14,25 +14,30 @@ public class giroCarta : MonoBehaviour
     private bool coroutineAllowed, facedUp;
 
 
+    Coroutine lastRoutine;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
-        rend.sprite = backSprite;
+        //rend.sprite = backSprite;
         coroutineAllowed = true;
-        facedUp = false;
+        facedUp = true;
     }
 
-    private void OnMouseDown()
+    private void Update()
     {
-        if (coroutineAllowed)
+        if (coroutineAllowed && Input.GetMouseButtonDown(1) )
         {
-            StartCoroutine(RotateCard());
+            lastRoutine = StartCoroutine(RotateCard());
         }
     }
 
+
     private IEnumerator RotateCard()
     {
+        
         coroutineAllowed = false;
 
         if (!facedUp)
@@ -65,11 +70,4 @@ public class giroCarta : MonoBehaviour
         facedUp = !facedUp;
 
     }
-
-    
-    
-
-
-  
-    
 }

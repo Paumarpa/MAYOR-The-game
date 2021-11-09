@@ -5,9 +5,15 @@ using UnityEngine;
 public class cardscript : MonoBehaviour
 {
     public bool isMouseOver = false;
+    public bool isDragging = false;
     private void OnMouseOver()
     {
         isMouseOver = true;
+    }
+
+     private void OnMouseDrag()
+    {
+        isDragging = true;
     }
 
     private void OnMouseExit()
