@@ -48,8 +48,7 @@ public class Deslizar : MonoBehaviour
 
             spr.color = Color.white;
         }
-        //Debug.Log(electricidad);
-        //electricidad++;
+       
 
         if (Input.GetMouseButtonUp(0))
         {
