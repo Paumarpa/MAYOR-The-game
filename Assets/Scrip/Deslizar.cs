@@ -9,12 +9,14 @@ public class Deslizar : MonoBehaviour
     //public static int electricidad;
 
     public GameObject carta;
+
     public cardscript cs;
+
     SpriteRenderer spr;
     public float velCarta = .5f;
     public int restan = 2;
     private static int anyosEnPoder = 0;
-    public string stringAnyos = " Años";
+    public string stringAnyos = " AÃ±os";
 
     public Text textAnyos;
 
@@ -44,7 +46,6 @@ public class Deslizar : MonoBehaviour
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log("kk");
                 cs.izquierda();
                 restan--;
             }
@@ -55,16 +56,15 @@ public class Deslizar : MonoBehaviour
         {
             spr.color = Color.white;
         }
-        //Debug.Log(electricidad);
-        //electricidad++;   
-    
-        if (restan <= 0)
+
+     
+        if (Input.GetMouseButtonUp(0))
+
         {
-            restan = 2;
-            anyosEnPoder++;
-            if(textAnyos != null)
             {
-                textAnyos.text = anyosEnPoder.ToString() + stringAnyos;
+  
+                cs.derecha();
+
             }
         }
 
