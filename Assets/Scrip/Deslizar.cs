@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Deslizar : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class Deslizar : MonoBehaviour
     public cardscript cs;
     SpriteRenderer spr;
     public float velCarta = .5f;
+    public int restan = 2;
+    private static int anyosEnPoder = 0;
+    public string stringAnyos = " Años";
+
+    public Text textAnyos;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +28,15 @@ public class Deslizar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         if (carta.transform.position.x > 2)
         {
             spr.color = Color.green;
-
+            if (Input.GetMouseButtonUp(0))
+            {
+                Debug.Log("caca");
+                cs.derecha();
+                restan--;
+            }
         }
 
         else if (carta.transform.position.x < -2)
@@ -38,24 +46,25 @@ public class Deslizar : MonoBehaviour
             {
                 Debug.Log("kk");
                 cs.izquierda();
+                restan--;
             }
 
         }
 
         else
         {
-
             spr.color = Color.white;
         }
         //Debug.Log(electricidad);
-        //electricidad++;
-
-        if (Input.GetMouseButtonUp(0))
+        //electricidad++;   
+    
+        if (restan <= 0)
         {
-            if (carta.transform.position.x > 2)
+            restan = 2;
+            anyosEnPoder++;
+            if(textAnyos != null)
             {
-                Debug.Log("caca");
-                cs.derecha();
+                textAnyos.text = anyosEnPoder.ToString() + stringAnyos;
             }
         }
 
