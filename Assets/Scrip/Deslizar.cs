@@ -11,7 +11,7 @@ public class Deslizar : MonoBehaviour
     public cardscript cs;
     SpriteRenderer spr;
     public float velCarta = .5f;
-
+    // public script ScriptA = modificaTamaño;
     // Start is called before the first frame update
     void Start()
     {
