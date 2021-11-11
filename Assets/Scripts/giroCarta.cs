@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class giroCarta : MonoBehaviour
 {
+    public GameObject carta;
 
     private SpriteRenderer rend;
 
@@ -20,7 +21,7 @@ public class giroCarta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<SpriteRenderer>();
+        rend = carta.GetComponent<SpriteRenderer>();
         //rend.sprite = backSprite;
         coroutineAllowed = true;
         facedUp = true;
@@ -44,7 +45,7 @@ public class giroCarta : MonoBehaviour
         {
             for (float i =0f; i<= 180f; i+= 10f)
             {
-                transform.rotation = Quaternion.Euler(0f, i, 0f);
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if(i == 90f)
                 {
                     rend.sprite = faceSprite;
@@ -56,7 +57,7 @@ public class giroCarta : MonoBehaviour
         {
             for (float i = 180f; i >= 0f; i -= 10f)
             {
-                transform.rotation = Quaternion.Euler(0f, i, 0f);
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
                 {
                     rend.sprite = backSprite;

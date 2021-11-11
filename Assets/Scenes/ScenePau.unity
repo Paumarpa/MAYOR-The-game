@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 433396118}
   - component: {fileID: 433396117}
   - component: {fileID: 433396116}
-  - component: {fileID: 433396120}
   - component: {fileID: 433396119}
   m_Layer: 0
   m_Name: cartaNormal
@@ -248,20 +247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMouseOver: 0
   isDragging: 0
---- !u!114 &433396120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433396115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89f34c307029944697f868290bd5339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  faceSprite: {fileID: 21300000, guid: 051b9d254758f3045a89738c31aec3a1, type: 3}
-  backSprite: {fileID: 21300000, guid: a506256bbe2c4184d976744b4d24c8d5, type: 3}
 --- !u!1 &588102862
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735805360}
   - component: {fileID: 1735805361}
+  - component: {fileID: 1735805362}
   m_Layer: 0
   m_Name: Game manager
   m_TagString: Untagged
@@ -391,3 +377,18 @@ MonoBehaviour:
   carta: {fileID: 433396115}
   cs: {fileID: 433396119}
   velCarta: 0.5
+--- !u!114 &1735805362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735805359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89f34c307029944697f868290bd5339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carta: {fileID: 433396115}
+  faceSprite: {fileID: 21300000, guid: 051b9d254758f3045a89738c31aec3a1, type: 3}
+  backSprite: {fileID: 21300000, guid: a506256bbe2c4184d976744b4d24c8d5, type: 3}

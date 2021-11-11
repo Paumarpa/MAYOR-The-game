@@ -8,7 +8,9 @@ public class Deslizar : MonoBehaviour
     //public static int electricidad;
 
     public GameObject carta;
+
     public cardscript cs;
+
     SpriteRenderer spr;
     public float velCarta = .5f;
 
