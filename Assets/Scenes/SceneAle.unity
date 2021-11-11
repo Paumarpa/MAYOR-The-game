@@ -625,7 +625,7 @@ MonoBehaviour:
   velCarta: 0.5
   restan: 2
   stringAnyos: " A\xF1os"
-  textAnyos: {fileID: 0}
+  textAnyos: {fileID: 1767566974}
 --- !u!4 &2140416419
 Transform:
   m_ObjectHideFlags: 0

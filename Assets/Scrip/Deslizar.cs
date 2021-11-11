@@ -57,7 +57,16 @@ public class Deslizar : MonoBehaviour
             spr.color = Color.white;
         }
 
-     
+        if (restan <= 0)
+        {
+            restan = 2;
+            anyosEnPoder++;
+            if (textAnyos != null)
+            {
+                textAnyos.text = anyosEnPoder.ToString() + stringAnyos;
+            }
+        }
+
         if (Input.GetMouseButtonUp(0))
 
         {
