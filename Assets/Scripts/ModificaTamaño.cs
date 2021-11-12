@@ -15,6 +15,6 @@ public class ModificaTamaño : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localScale = new Vector3(1.25f, ValorStat, 1f);
+        this.transform.localScale = new Vector3(0.22f, ValorStat, 1f);
     }
 }
