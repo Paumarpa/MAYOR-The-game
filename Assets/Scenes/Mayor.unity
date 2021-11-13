@@ -290,10 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisCarta:
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
+  - {fileID: 0}
   thisId: 1
   id: 0
   nombreCarta: 
@@ -472,167 +469,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baraja:
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
-  - id: 0
-    nombreCarta: 
-    descripcionCarta: 
-    thisImagen: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   x: 0
+  "tama\xF1oBaraja": 0
 --- !u!1 &1352579537
 GameObject:
   m_ObjectHideFlags: 0
