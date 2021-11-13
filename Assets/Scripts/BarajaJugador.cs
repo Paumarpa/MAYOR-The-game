@@ -14,7 +14,7 @@ public class BarajaJugador : MonoBehaviour
     void Start()
     {
         x = 0;
-        tamañoBaraja = 40;
+        tamañoBaraja = 10;
 
         for (int i = 0; i < tamañoBaraja; i++)
         {

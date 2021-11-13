@@ -18,6 +18,7 @@ public class ThisCarta : MonoBehaviour
 
     public Text nameText;
     public Text descText;
+
     // Start is called before the first frame update
     void Start()
     {
