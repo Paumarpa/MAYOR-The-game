@@ -14,12 +14,13 @@ public class BarajaJugador : MonoBehaviour
     void Start()
     {
         x = 0;
-        tamañoBaraja = 10;
+        tamañoBaraja = 40;
 
         for (int i = 0; i < tamañoBaraja; i++)
         {
             x = Random.Range(0, 5); //rango id cartas de BaseDatosCartas
-            baraja[i] = BaseDatosCarta.Listacartas[x];
+            //baraja[i] = BaseDatosCarta.Listacartas[x];
+            baraja.Add(BaseDatosCarta.Listacartas[x]);
         }
     }
 

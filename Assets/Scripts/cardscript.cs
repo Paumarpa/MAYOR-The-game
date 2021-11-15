@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class cardscript : MonoBehaviour
 {
+    public BaseCarta baseCarta;
+
+
     public bool isMouseOver = false;
     public bool isDragging = false;
     private void OnMouseOver()

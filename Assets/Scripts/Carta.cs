@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
 
-public class Carta : MonoBehaviour
+public class Carta
 {
     public int id;
     public string nombreCarta;
