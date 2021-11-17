@@ -16,6 +16,7 @@ public class Deslizar : MonoBehaviour
     SpriteRenderer spr;
     public float velCarta = .5f;
 
+    
     //giro carta
     [SerializeField]
 
@@ -24,13 +25,13 @@ public class Deslizar : MonoBehaviour
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
-    /*
+    
     public int restan = 2;
     private static int anyosEnPoder = 0;
     public string stringAnyos = " Años";
 
     public Text textAnyos;
-    */
+    
 
     // Start is called before the first frame update
     void Start()
@@ -62,7 +63,7 @@ public class Deslizar : MonoBehaviour
             {
                 Debug.Log("caca");
                 cs.derecha();
-                //restan--;
+                restan--;
             }
         }
 
@@ -72,7 +73,7 @@ public class Deslizar : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 cs.izquierda();
-                //restan--;
+                restan--;
             }
 
         }
@@ -82,7 +83,16 @@ public class Deslizar : MonoBehaviour
             spr.color = Color.white;
         }
 
-     
+        if (restan <= 0)
+        {
+            restan = 2;
+            anyosEnPoder++;
+            if (textAnyos != null)
+            {
+                textAnyos.text = anyosEnPoder.ToString() + stringAnyos;
+            }
+        }
+
         if (Input.GetMouseButtonUp(0))
 
         {
