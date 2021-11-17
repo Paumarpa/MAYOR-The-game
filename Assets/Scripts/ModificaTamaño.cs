@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ModificaTamaño : MonoBehaviour
 {
-    public float ValorStat = 1.25f;
+    public float ValorStat = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,6 @@ public class ModificaTamaño : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localScale = new Vector3(0.22f, ValorStat, 1f);
+        this.transform.localScale = new Vector3(1f, ValorStat, 1f);
     }
 }
