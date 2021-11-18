@@ -64,8 +64,11 @@ public class DeslizarP : MonoBehaviour
                 Debug.Log("caca");
                 cs.derecha();
                 //restan--;
+
+                //aqui se carga siguiente carta
                 spr.sprite = backSprite;
                 facedUp = false;
+               
                 if(coroutineAllowed )
                 {
                     StartCoroutine(RotateNewCard());
@@ -80,8 +83,11 @@ public class DeslizarP : MonoBehaviour
                 cs.izquierda();
                 //restan--;
 
+                //aqui se carga siguiente carta
                 spr.sprite = backSprite;
                 facedUp = false;
+
+                
                 if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
@@ -149,7 +155,7 @@ public class DeslizarP : MonoBehaviour
 
     private IEnumerator RotateNewCard()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.5f);//tiempo de espera para girar nueva carta
         coroutineAllowed = false;
         
         if (!facedUp)
