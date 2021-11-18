@@ -66,6 +66,8 @@ public class DeslizarP : MonoBehaviour
                 //restan--;
 
                 //aqui se carga siguiente carta
+                //tambien se tiene que actualizar el siguiente dorso de la baraja
+
                 spr.sprite = backSprite;
                 facedUp = false;
                
@@ -84,6 +86,7 @@ public class DeslizarP : MonoBehaviour
                 //restan--;
 
                 //aqui se carga siguiente carta
+                //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
                 facedUp = false;
 
