@@ -9,7 +9,7 @@ public class BaseCarta : ScriptableObject
     public string nombreCarta;
     public string descripcionCarta;
 
-    public Sprite thisImagen;
+    public Sprite imagen;
 
     public int izqElect; //Valores pa cuando giras a la izquierda
     public int izqGente;
