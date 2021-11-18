@@ -10,6 +10,15 @@ public class Deslizar : MonoBehaviour
 
     public GameObject carta;
 
+    //estadisticas
+    /*
+    public GameObject electricidad;
+    public GameObject felicidad;
+    public GameObject poblacion;
+    public GameObject carta;
+    public GameObject;
+    */
+
     public cardscript cs;
     public ModificaTamaño stats;
 

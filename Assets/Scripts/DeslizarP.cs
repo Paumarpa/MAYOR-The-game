@@ -16,11 +16,13 @@ public class DeslizarP : MonoBehaviour
     SpriteRenderer spr;
     public float velCarta = .5f;
 
+
+    
     //giro carta
     [SerializeField]
 
     private Sprite faceSprite, backSprite, barajaSprite;
-
+    public GameObject infoCarta;
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
@@ -31,7 +33,7 @@ public class DeslizarP : MonoBehaviour
 
     public Text textAnyos;
     */
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,7 @@ public class DeslizarP : MonoBehaviour
         if (coroutineAllowed)   //no está en la coroutina, por lo que no choca con ello
             carta.transform.rotation = Quaternion.Euler(0f, 0f, -2 * carta.transform.position.x);
 
-
+        
         if (coroutineAllowed && Input.GetMouseButtonDown(1))
         {
             lastRoutine = StartCoroutine(RotateCard());
@@ -122,7 +124,7 @@ public class DeslizarP : MonoBehaviour
 
     private IEnumerator RotateCard()
     {
-
+        
         coroutineAllowed = false;
 
         if (!facedUp)
@@ -136,6 +138,7 @@ public class DeslizarP : MonoBehaviour
                 }
                 yield return new WaitForSeconds(0.01f);
             }
+            infoCarta.SetActive(true);
         }
         if (facedUp)
         {
@@ -148,7 +151,7 @@ public class DeslizarP : MonoBehaviour
                 }
                 yield return new WaitForSeconds(0.01f);
             }
-
+            infoCarta.SetActive(false);
         }
         coroutineAllowed = true;
 
