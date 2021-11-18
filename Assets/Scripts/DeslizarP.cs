@@ -64,6 +64,12 @@ public class DeslizarP : MonoBehaviour
                 Debug.Log("caca");
                 cs.derecha();
                 //restan--;
+                spr.sprite = backSprite;
+                facedUp = false;
+                if(coroutineAllowed )
+                {
+                    StartCoroutine(RotateNewCard());
+                }
             }
         }
         else if (carta.transform.position.x < -2)
@@ -73,6 +79,13 @@ public class DeslizarP : MonoBehaviour
             {
                 cs.izquierda();
                 //restan--;
+
+                spr.sprite = backSprite;
+                facedUp = false;
+                if (coroutineAllowed)
+                {
+                    StartCoroutine(RotateNewCard());
+                }
             }
 
         }
@@ -127,6 +140,29 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
             }
 
+        }
+        coroutineAllowed = true;
+
+        facedUp = !facedUp;
+    }
+
+
+    private IEnumerator RotateNewCard()
+    {
+        yield return new WaitForSeconds(0.5f);
+        coroutineAllowed = false;
+        
+        if (!facedUp)
+        {
+            for (float i = 0f; i <= 180f; i += 10f)
+            {
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
+                if (i == 90f)
+                {
+                    spr.sprite = faceSprite;
+                }
+                yield return new WaitForSeconds(0.02f);
+            }
         }
         coroutineAllowed = true;
 
