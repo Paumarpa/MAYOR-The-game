@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
+  m_Name: Pau
+  m_EditorClassIdentifier: 
+  id: 1
+  nombreCarta: <pau
+  descripcionCarta: Pau el escalador
+  imagen: {fileID: 21300000, guid: 247af321774892a468b766278527e101, type: 3}
+  izqElect: -19
+  izqGente: 2
+  izqFelic: 3
+  izqDinero: 26345
+  izqComida: 465
+  derElect: 4
+  derGente: 45
+  derFelic: 4
+  derDinero: 48
+  derComida: 6
+  sigID: 2
+  aleatoria: 0

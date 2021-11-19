@@ -31,6 +31,12 @@ public class DeslizarP : MonoBehaviour
 
     public Text textAnyos;
     */
+    [SerializeField] private BaseCarta[] cartasQueUsamos;
+
+    private void SigCarta(int cartaPos)
+    {
+        cs.cartaDatos = cartasQueUsamos[cartaPos];
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -82,9 +88,11 @@ public class DeslizarP : MonoBehaviour
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
-                cs.izquierda();
+                int aux = cs.izquierda();
                 //restan--;
 
+                SigCarta(aux);
+                cs.UpdateCartaUI();
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
