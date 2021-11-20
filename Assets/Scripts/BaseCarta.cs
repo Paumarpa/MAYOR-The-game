@@ -23,6 +23,6 @@ public class BaseCarta : ScriptableObject
     public int derDinero;
     public int derComida;
 
-    public int sigIDizq;
+    public int sigID;
     public bool aleatoria;
 }
