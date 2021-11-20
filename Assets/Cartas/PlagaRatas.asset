@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: Pau
+  m_Name: PlagaRatas
   m_EditorClassIdentifier: 
-  id: 1
-  nombreCarta: <pau
-  descripcionCarta: Pau el escalador
-  imagen: {fileID: 21300000, guid: 247af321774892a468b766278527e101, type: 3}
-  izqElect: -19
-  izqGente: 2
-  izqFelic: 3
-  izqDinero: 26345
-  izqComida: 465
-  derElect: 4
-  derGente: 45
-  derFelic: 4
-  derDinero: 48
-  derComida: 6
-  sigID: 2
+  id: 5
+  nombreCarta: Plaga
+  descripcionCarta: Una plaga de ratas estan royendo los cables de las casas y de
+    la calle
+  imagen: {fileID: 0}
+  izqElect: 3
+  izqGente: 0
+  izqFelic: 0
+  izqDinero: 0
+  izqComida: 0
+  derElect: 0
+  derGente: 0
+  derFelic: 0
+  derDinero: 0
+  derComida: 0
+  sigID: 0
   aleatoria: 0

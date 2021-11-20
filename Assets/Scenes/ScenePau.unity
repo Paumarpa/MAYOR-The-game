@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa9acc1a52a19747acbfdc26b365ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartaDatos: {fileID: 11400000, guid: 9a1a4c3248761354097e561301b4a1a9, type: 2}
+  cartaDatos: {fileID: 0}
   isMouseOver: 0
   isDragging: 0
   nombreCarta: {fileID: 0}
@@ -650,9 +650,8 @@ MonoBehaviour:
   backSprite: {fileID: 21300000, guid: f6c096ea4635b644f841b8a2bb0bb696, type: 3}
   barajaSprite: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
   cartasQueUsamos:
-  - {fileID: 11400000, guid: 9a1a4c3248761354097e561301b4a1a9, type: 2}
-  - {fileID: 11400000, guid: bd4dc4fd829ce5348a18f24222229a10, type: 2}
   - {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
+  - {fileID: 11400000, guid: d13dca27a643b834c9d4a819c49cd6d2, type: 2}
 --- !u!1 &1989796700
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +785,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7002524184743848369, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: cartaDatos
+      value: 
+      objectReference: {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
     - target: {fileID: 7002524184743848371, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_Name
       value: cartaOscura
