@@ -56,6 +56,7 @@ public class DeslizarP : MonoBehaviour
         if (coroutineAllowed)   //no está en la coroutina, por lo que no choca con ello
             carta.transform.rotation = Quaternion.Euler(0f, 0f, -2 * carta.transform.position.x);
 
+       
 
         if (coroutineAllowed && Input.GetMouseButtonDown(1))
         {
@@ -97,8 +98,9 @@ public class DeslizarP : MonoBehaviour
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
                 facedUp = false;
+                cs.imagen.enabled = false;
 
-                
+
                 if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
@@ -135,12 +137,15 @@ public class DeslizarP : MonoBehaviour
 
         if (!facedUp)
         {
+            
             for (float i = 0f; i <= 180f; i += 10f)
             {
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
                 {
                     spr.sprite = faceSprite;
+                    cs.imagen.enabled = true;
+
                 }
                 yield return new WaitForSeconds(0.01f);
             }
@@ -153,6 +158,7 @@ public class DeslizarP : MonoBehaviour
                 if (i == 90f)
                 {
                     spr.sprite = backSprite;
+                    cs.imagen.enabled = false;
                 }
                 yield return new WaitForSeconds(0.01f);
             }
@@ -171,12 +177,15 @@ public class DeslizarP : MonoBehaviour
         
         if (!facedUp)
         {
+
             for (float i = 0f; i <= 180f; i += 10f)
             {
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
                 {
                     spr.sprite = faceSprite;
+                    cs.imagen.enabled = true;
+
                 }
                 yield return new WaitForSeconds(0.02f);
             }
