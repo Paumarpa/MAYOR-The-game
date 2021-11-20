@@ -15,7 +15,7 @@ public class cardscript : MonoBehaviour
     [SerializeField]private TextMeshProUGUI nombreCarta;
     [SerializeField] private TextMeshProUGUI descripcionCarta;
 
-    [SerializeField] public Image imagen;
+    [SerializeField] public Image imagen { get; private set; }
 
     private void Start()
     {
@@ -40,18 +40,26 @@ public class cardscript : MonoBehaviour
 
     }
 
+    public Image GetImage()
+    {
+        return imagen;
+    }
+
     public int izquierda()
     {
         //cartaDatos.luz += cartaDatos.izqElect;
        // Debug.Log("has escogida izquierda");
         Debug.Log(cartaDatos.id + "es mi id jeje");
 
-        return cartaDatos.sigID;
+        return cartaDatos.sigIDizq;
     }
 
-    public void derecha()
+    public int derecha()
     {
-       // Debug.Log("derecha");
+        // Debug.Log("derecha");
+        return cartaDatos.sigIDizq;//cambiar a derecha
+
+
     }
 
     public void UpdateCartaUI()
@@ -73,6 +81,6 @@ public class cardscript : MonoBehaviour
         {
             aleatorioID = Random.Range(0, 3);
         }
-        cartaDatos.sigID = aleatorioID;
+        cartaDatos.sigIDizq = aleatorioID;
     }
 }

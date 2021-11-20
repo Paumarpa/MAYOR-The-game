@@ -60,7 +60,7 @@ public class DeslizarP : MonoBehaviour
 
         if (coroutineAllowed && Input.GetMouseButtonDown(1))
         {
-            lastRoutine = StartCoroutine(RotateCard());
+            lastRoutine = StartCoroutine(RotateCard(0.02f));
         }
 
         if (carta.transform.position.x > 2)
@@ -69,16 +69,18 @@ public class DeslizarP : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 Debug.Log("caca");
-                cs.derecha();
-                //restan--;
+                int aux = cs.derecha();                //restan--;
 
+                 SigCarta(aux);
+                cs.UpdateCartaUI();
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
                 spr.sprite = backSprite;
                 facedUp = false;
-               
-                if(coroutineAllowed )
+                cs.imagen.enabled = false;
+
+                if (coroutineAllowed )
                 {
                     StartCoroutine(RotateNewCard());
                 }
@@ -93,8 +95,8 @@ public class DeslizarP : MonoBehaviour
                 //restan--;
 
                 SigCarta(aux);
-                cs.UpdateCartaUI();
-                //aqui se carga siguiente carta
+                cs.UpdateCartaUI();//aqui se carga siguiente carta
+                
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
                 facedUp = false;
@@ -130,29 +132,32 @@ public class DeslizarP : MonoBehaviour
         }
     }
 
-    private IEnumerator RotateCard()
+    private IEnumerator RotateCard(float tiempoRotacion)
     {
-
+        float tiempoRot = tiempoRotacion;
         coroutineAllowed = false;
 
         if (!facedUp)
         {
-            
-            for (float i = 0f; i <= 180f; i += 10f)
+              
+            for (float i = 0f; i <= 90f; i += 10f)
             {
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
-                if (i == 90f)
-                {
-                    spr.sprite = faceSprite;
-                    cs.imagen.enabled = true;
-
-                }
-                yield return new WaitForSeconds(0.01f);
+               
+                
+                yield return new WaitForSeconds(tiempoRot);
+            }
+            cs.imagen.enabled = true;
+            spr.sprite = faceSprite;
+            for (float i = 90f; i >= 0f; i -= 10f)
+            {
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
+                yield return new WaitForSeconds(tiempoRot);
             }
         }
         if (facedUp)
         {
-            for (float i = 180f; i >= 0f; i -= 10f)
+            /*for (float i = 180f; i >= 0f; i -= 10f)
             {
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
@@ -161,6 +166,21 @@ public class DeslizarP : MonoBehaviour
                     cs.imagen.enabled = false;
                 }
                 yield return new WaitForSeconds(0.01f);
+            }*/
+            for (float i = 0f; i <= 90f; i += 10f)
+            {
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
+                yield return new WaitForSeconds(tiempoRot);
+            }
+            cs.imagen.enabled = false;
+            spr.sprite = backSprite;
+
+            for (float i = 90f; i >= 0f; i -= 10f)
+            {
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
+
+
+                yield return new WaitForSeconds(tiempoRot);
             }
 
         }
@@ -178,7 +198,7 @@ public class DeslizarP : MonoBehaviour
         if (!facedUp)
         {
 
-            for (float i = 0f; i <= 180f; i += 10f)
+            /*for (float i = 0f; i <= 180f; i += 10f)
             {
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 if (i == 90f)
@@ -188,10 +208,11 @@ public class DeslizarP : MonoBehaviour
 
                 }
                 yield return new WaitForSeconds(0.02f);
-            }
+            }*/
+            StartCoroutine(RotateCard(0.02f));
         }
-        coroutineAllowed = true;
+        //coroutineAllowed = true;
 
-        facedUp = !facedUp;
+        //facedUp = true;
     }
 }
