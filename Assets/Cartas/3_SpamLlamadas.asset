@@ -27,5 +27,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigID: 4
+  sigIDizq: 0
+  sigIDder: 4
   aleatoria: 0

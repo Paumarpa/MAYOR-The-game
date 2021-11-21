@@ -71,10 +71,10 @@ public class cardscript : MonoBehaviour
 
     private void SetSigID(bool izq)
     {
-        int aleatorioID = Random.Range(3, 7);
+        int aleatorioID = Random.Range(3, 8);
         while(cartaDatos.id == aleatorioID)//solo par no pillarse a si misma//poner condicion cartas prohibidas//mirar como hacer un array xD
         {
-            aleatorioID = Random.Range(3, 7);
+            aleatorioID = Random.Range(3, 8);
         }
 
         cartaDatos.sigIDizq = aleatorioID;

@@ -657,11 +657,13 @@ MonoBehaviour:
   barajaSprite: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
   cartasQueUsamos:
   - {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
-  - {fileID: 11400000, guid: d13dca27a643b834c9d4a819c49cd6d2, type: 2}
+  - {fileID: 11400000, guid: 0c9b8fe6fef6775438deadbfad51cdb5, type: 2}
   - {fileID: 11400000, guid: 9a1a4c3248761354097e561301b4a1a9, type: 2}
   - {fileID: 11400000, guid: 0132959027403e8409548a9b55d901ea, type: 2}
-  - {fileID: 11400000, guid: 0c9b8fe6fef6775438deadbfad51cdb5, type: 2}
+  - {fileID: 11400000, guid: d13dca27a643b834c9d4a819c49cd6d2, type: 2}
   - {fileID: 11400000, guid: 058051aea3df6c949a822242a499aeb6, type: 2}
+  - {fileID: 11400000, guid: edbe26bd930d9eb4aa21957b2753cacb, type: 2}
+  - {fileID: 11400000, guid: ec8d9b3bf04dc064a88742f39a0a3e12, type: 2}
 --- !u!1 &1989796700
 GameObject:
   m_ObjectHideFlags: 0

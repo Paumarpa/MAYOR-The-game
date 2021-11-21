@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 6_ejemplokk
+  m_Name: 7_asd
   m_EditorClassIdentifier: 
-  id: 6
-  nombreCarta: ejemplo
-  descripcionCarta: Se hizo ejemplo en os huevetes
-  imagen: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
-  izqElect: 1
-  izqGente: -1
-  izqFelic: -5
-  izqDinero: -1
-  izqComida: 2
-  derElect: -1
-  derGente: 1
-  derFelic: 5
-  derDinero: 1
-  derComida: 1
-  sigIDizq: 5
-  sigIDder: 6
-  aleatoria: 1
+  id: 7
+  nombreCarta: 
+  descripcionCarta: 
+  imagen: {fileID: 0}
+  izqElect: 0
+  izqGente: 0
+  izqFelic: 0
+  izqDinero: 0
+  izqComida: 0
+  derElect: 0
+  derGente: 0
+  derFelic: 0
+  derDinero: 0
+  derComida: 0
+  sigIDizq: 0
+  sigIDder: 0
+  aleatoria: 0

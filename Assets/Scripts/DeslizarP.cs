@@ -74,6 +74,7 @@ public class DeslizarP : MonoBehaviour
 
                  SigCarta(aux);
                 cs.UpdateCartaUI(false);
+                //cs.cartaDatos.derElect  - - - - > acceder a las estadisticas de carta
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
