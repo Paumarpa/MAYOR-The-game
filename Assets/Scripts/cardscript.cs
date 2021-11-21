@@ -12,9 +12,9 @@ public class cardscript : MonoBehaviour
     public bool isMouseOver = false;
     public bool isDragging = false;
 
-    [SerializeField]private TextMeshProUGUI nombreCarta;
-    [SerializeField] private TextMeshProUGUI descripcionCarta;
-
+    [SerializeField]public TextMeshProUGUI nombreCarta;
+    [SerializeField] public TextMeshProUGUI descripcionCarta;
+    [SerializeField] public SpriteRenderer fondoTexto;
     [SerializeField] public Image imagen;
 
     private void Start()
@@ -40,10 +40,6 @@ public class cardscript : MonoBehaviour
 
     }
 
-    public Image GetImage()
-    {
-        return imagen;
-    }
 
     public int izquierda()
     {
@@ -75,11 +71,11 @@ public class cardscript : MonoBehaviour
 
     private void SetSigID()
     {
-        int aleatorioID = Random.Range(0, 3);
+        int aleatorioID = Random.Range(3, 6);
         while(cartaDatos.id == aleatorioID)//solo par no pillarse a si misma//poner condicion cartas prohibidas//mirar como hacer un array xD
 
         {
-            aleatorioID = Random.Range(0, 3);
+            aleatorioID = Random.Range(3, 6);
         }
         cartaDatos.sigID = aleatorioID;
     }

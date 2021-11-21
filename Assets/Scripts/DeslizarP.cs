@@ -79,7 +79,9 @@ public class DeslizarP : MonoBehaviour
                 spr.sprite = backSprite;
                 facedUp = false;
                 cs.imagen.enabled = false;
-
+                cs.nombreCarta.enabled = false;
+                cs.descripcionCarta.enabled = false;
+                cs.fondoTexto.enabled = false;
                 if (coroutineAllowed )
                 {
                     StartCoroutine(RotateNewCard());
@@ -101,7 +103,9 @@ public class DeslizarP : MonoBehaviour
                 spr.sprite = backSprite;
                 facedUp = false;
                 cs.imagen.enabled = false;
-
+                cs.nombreCarta.enabled = false;
+                cs.descripcionCarta.enabled = false;
+                cs.fondoTexto.enabled = false;
 
                 if (coroutineAllowed)
                 {
@@ -148,6 +152,10 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(tiempoRot);
             }
             cs.imagen.enabled = true;
+            cs.nombreCarta.enabled = true;
+            cs.descripcionCarta.enabled = true;
+            cs.fondoTexto.enabled = true;
+
             spr.sprite = faceSprite;
             for (float i = 90f; i >= 0f; i -= 10f)
             {
@@ -173,6 +181,10 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(tiempoRot);
             }
             cs.imagen.enabled = false;
+            cs.nombreCarta.enabled = false;
+            cs.descripcionCarta.enabled = false;
+            cs.fondoTexto.enabled = false;
+
             spr.sprite = backSprite;
 
             for (float i = 90f; i >= 0f; i -= 10f)
