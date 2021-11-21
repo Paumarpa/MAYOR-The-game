@@ -63,7 +63,8 @@ public class DeslizarP : MonoBehaviour
             lastRoutine = StartCoroutine(RotateCard(0.02f));
         }
 
-        if (carta.transform.position.x > 2)
+        
+        if (carta.transform.position.x > 2) //PARA LA DERECHA
         {
             spr.color = Color.green;
             if (Input.GetMouseButtonUp(0))
@@ -72,21 +73,24 @@ public class DeslizarP : MonoBehaviour
                 int aux = cs.derecha();                //restan--;
 
                  SigCarta(aux);
-                cs.UpdateCartaUI();
+                cs.UpdateCartaUI(false);
+                //cs.cartaDatos.derElect  - - - - > acceder a las estadisticas de carta
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
                 spr.sprite = backSprite;
                 facedUp = false;
                 cs.imagen.enabled = false;
-
+                cs.nombreCarta.enabled = false;
+                cs.descripcionCarta.enabled = false;
+                cs.fondoTexto.enabled = false;
                 if (coroutineAllowed )
                 {
                     StartCoroutine(RotateNewCard());
                 }
             }
         }
-        else if (carta.transform.position.x < -2)
+        else if (carta.transform.position.x < -2)   //PARA LA IZQUIERDA
         {
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
@@ -95,13 +99,15 @@ public class DeslizarP : MonoBehaviour
                 //restan--;
 
                 SigCarta(aux);
-                cs.UpdateCartaUI();//aqui se carga siguiente carta
+                cs.UpdateCartaUI(true);//aqui se carga siguiente carta
                 
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
                 facedUp = false;
                 cs.imagen.enabled = false;
-
+                cs.nombreCarta.enabled = false;
+                cs.descripcionCarta.enabled = false;
+                cs.fondoTexto.enabled = false;
 
                 if (coroutineAllowed)
                 {
@@ -148,6 +154,10 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(tiempoRot);
             }
             cs.imagen.enabled = true;
+            cs.nombreCarta.enabled = true;
+            cs.descripcionCarta.enabled = true;
+            cs.fondoTexto.enabled = true;
+
             spr.sprite = faceSprite;
             for (float i = 90f; i >= 0f; i -= 10f)
             {
@@ -173,6 +183,10 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(tiempoRot);
             }
             cs.imagen.enabled = false;
+            cs.nombreCarta.enabled = false;
+            cs.descripcionCarta.enabled = false;
+            cs.fondoTexto.enabled = false;
+
             spr.sprite = backSprite;
 
             for (float i = 90f; i >= 0f; i -= 10f)

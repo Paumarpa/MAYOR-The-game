@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: PlagaRatas
+  m_Name: 2_ConsecuenciasPlaca
   m_EditorClassIdentifier: 
-  id: 5
-  nombreCarta: Plaga
-  descripcionCarta: Una plaga de ratas estan royendo los cables de las casas y de
-    la calle
-  imagen: {fileID: 0}
-  izqElect: 3
-  izqGente: 0
+  id: 2
+  nombreCarta: Eclipse
+  descripcionCarta: "Tras depender demasiado de las placas solares varios d\xEDas
+    sin sol dejan sin luz al pueblo"
+  imagen: {fileID: 21300000, guid: 68dd5a1d0976f654d81a9bcda37a990e, type: 3}
+  izqElect: -2
+  izqGente: -1
   izqFelic: 0
   izqDinero: 0
   izqComida: 0
-  derElect: 0
-  derGente: 0
+  derElect: -2
+  derGente: -1
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigID: 0
-  aleatoria: 0
+  sigIDizq: 5
+  sigIDder: 5
+  aleatoria: 1

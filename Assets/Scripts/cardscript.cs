@@ -12,16 +12,16 @@ public class cardscript : MonoBehaviour
     public bool isMouseOver = false;
     public bool isDragging = false;
 
-    [SerializeField]private TextMeshProUGUI nombreCarta;
-    [SerializeField] private TextMeshProUGUI descripcionCarta;
-
+    [SerializeField]public TextMeshProUGUI nombreCarta;
+    [SerializeField] public TextMeshProUGUI descripcionCarta;
+    [SerializeField] public SpriteRenderer fondoTexto;
     [SerializeField] public Image imagen;
 
     private void Start()
     {
         spriteCarta = GetComponent<SpriteRenderer>();
 
-        UpdateCartaUI();
+        UpdateCartaUI(true);
     }
   
     private void OnMouseOver()
@@ -40,10 +40,6 @@ public class cardscript : MonoBehaviour
 
     }
 
-    public Image GetImage()
-    {
-        return imagen;
-    }
 
     public int izquierda()
     {
@@ -51,18 +47,18 @@ public class cardscript : MonoBehaviour
        // Debug.Log("has escogida izquierda");
         Debug.Log(cartaDatos.id + "es mi id jeje");
 
-        return cartaDatos.sigID;
+        return cartaDatos.sigIDizq;
     }
 
     public int derecha()
     {
         // Debug.Log("derecha");
-        return cartaDatos.sigID;//cambiar a derecha
+        return cartaDatos.sigIDder;//cambiar a derecha
 
 
     }
 
-    public void UpdateCartaUI()
+    public void UpdateCartaUI(bool ladoIzq)
     {
         nombreCarta.text = cartaDatos.nombreCarta;
         descripcionCarta.text = cartaDatos.descripcionCarta;
@@ -70,17 +66,30 @@ public class cardscript : MonoBehaviour
         imagen.sprite = cartaDatos.imagen;
 
        if (cartaDatos.aleatoria)
-            SetSigID();
+            SetSigID(ladoIzq);
     }
 
-    private void SetSigID()
+    private void SetSigID(bool izq)
     {
-        int aleatorioID = Random.Range(0, 3);
+        int aleatorioID = Random.Range(3, 8);
         while(cartaDatos.id == aleatorioID)//solo par no pillarse a si misma//poner condicion cartas prohibidas//mirar como hacer un array xD
-
         {
-            aleatorioID = Random.Range(0, 3);
+            aleatorioID = Random.Range(3, 8);
         }
-        cartaDatos.sigID = aleatorioID;
+
+        cartaDatos.sigIDizq = aleatorioID;
+        cartaDatos.sigIDder = aleatorioID;
+
+        /*int aleatorio2 = aleatorioID;
+        while (cartaDatos.id == aleatorio2 && aleatorio2 == aleatorioID)//solo par no pillarse a si misma//poner condicion cartas prohibidas//mirar como hacer un array xD
+        {
+            aleatorio2 = Random.Range(3, 6);
+        }
+        cartaDatos.sigIDder = aleatorio2;*/
+        /*if (izq)
+            cartaDatos.sigIDizq = aleatorioID;
+
+        else
+            cartaDatos.sigIDder = aleatorioID;*/
     }
 }

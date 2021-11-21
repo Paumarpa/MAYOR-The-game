@@ -332,6 +332,7 @@ MonoBehaviour:
   isDragging: 0
   nombreCarta: {fileID: 0}
   descripcionCarta: {fileID: 0}
+  fondoTexto: {fileID: 0}
   imagen: {fileID: 0}
 --- !u!1 &588102862
 GameObject:
@@ -416,6 +417,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &636488077 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7002524186042061590, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+  m_PrefabInstance: {fileID: 7002524184706926110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &688904967
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +657,13 @@ MonoBehaviour:
   barajaSprite: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
   cartasQueUsamos:
   - {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
+  - {fileID: 11400000, guid: 0c9b8fe6fef6775438deadbfad51cdb5, type: 2}
+  - {fileID: 11400000, guid: 9a1a4c3248761354097e561301b4a1a9, type: 2}
+  - {fileID: 11400000, guid: 0132959027403e8409548a9b55d901ea, type: 2}
   - {fileID: 11400000, guid: d13dca27a643b834c9d4a819c49cd6d2, type: 2}
+  - {fileID: 11400000, guid: 058051aea3df6c949a822242a499aeb6, type: 2}
+  - {fileID: 11400000, guid: edbe26bd930d9eb4aa21957b2753cacb, type: 2}
+  - {fileID: 11400000, guid: ec8d9b3bf04dc064a88742f39a0a3e12, type: 2}
 --- !u!1 &1989796700
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +801,10 @@ PrefabInstance:
       propertyPath: cartaDatos
       value: 
       objectReference: {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
+    - target: {fileID: 7002524184743848369, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: fondoTexto
+      value: 
+      objectReference: {fileID: 636488077}
     - target: {fileID: 7002524184743848371, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_Name
       value: cartaOscura
