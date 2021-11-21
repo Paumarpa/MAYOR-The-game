@@ -63,7 +63,8 @@ public class DeslizarP : MonoBehaviour
             lastRoutine = StartCoroutine(RotateCard(0.02f));
         }
 
-        if (carta.transform.position.x > 2)
+        
+        if (carta.transform.position.x > 2) //PARA LA DERECHA
         {
             spr.color = Color.green;
             if (Input.GetMouseButtonUp(0))
@@ -72,7 +73,7 @@ public class DeslizarP : MonoBehaviour
                 int aux = cs.derecha();                //restan--;
 
                  SigCarta(aux);
-                cs.UpdateCartaUI();
+                cs.UpdateCartaUI(false);
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
@@ -88,7 +89,7 @@ public class DeslizarP : MonoBehaviour
                 }
             }
         }
-        else if (carta.transform.position.x < -2)
+        else if (carta.transform.position.x < -2)   //PARA LA IZQUIERDA
         {
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
@@ -97,7 +98,7 @@ public class DeslizarP : MonoBehaviour
                 //restan--;
 
                 SigCarta(aux);
-                cs.UpdateCartaUI();//aqui se carga siguiente carta
+                cs.UpdateCartaUI(true);//aqui se carga siguiente carta
                 
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
                 spr.sprite = backSprite;
