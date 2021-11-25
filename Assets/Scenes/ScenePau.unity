@@ -332,6 +332,7 @@ MonoBehaviour:
   isDragging: 0
   nombreCarta: {fileID: 0}
   descripcionCarta: {fileID: 0}
+  descripcionLado: {fileID: 0}
   fondoTexto: {fileID: 0}
   imagen: {fileID: 0}
 --- !u!1 &588102862
@@ -505,6 +506,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &928056887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+  m_PrefabInstance: {fileID: 7002524184706926110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1488181552
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +765,68 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_text
+      value: 'descripcion lado
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_margin.y
+      value: 0.12692097
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268212564977002431, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586882163662890566, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063225498467599428, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.94518
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063225498467599428, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.31035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063225498467599428, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063225498467599428, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354049877147793184, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.32916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354049877147793184, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0070008
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354049877147793184, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.591
+      objectReference: {fileID: 0}
     - target: {fileID: 7002524184743848365, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -805,6 +879,10 @@ PrefabInstance:
       propertyPath: fondoTexto
       value: 
       objectReference: {fileID: 636488077}
+    - target: {fileID: 7002524184743848369, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: descripcionLado
+      value: 
+      objectReference: {fileID: 928056887}
     - target: {fileID: 7002524184743848371, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_Name
       value: cartaOscura
