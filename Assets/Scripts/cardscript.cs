@@ -14,13 +14,14 @@ public class cardscript : MonoBehaviour
 
     [SerializeField]public TextMeshProUGUI nombreCarta;
     [SerializeField] public TextMeshProUGUI descripcionCarta;
+    [SerializeField] public TextMeshProUGUI descripcionLado;
+
     [SerializeField] public SpriteRenderer fondoTexto;
     [SerializeField] public Image imagen;
 
     private void Start()
     {
         spriteCarta = GetComponent<SpriteRenderer>();
-
         UpdateCartaUI(true);
     }
   
@@ -39,6 +40,7 @@ public class cardscript : MonoBehaviour
         isMouseOver = false;
 
     }
+   
 
 
     public int izquierda()
@@ -54,18 +56,16 @@ public class cardscript : MonoBehaviour
     {
         // Debug.Log("derecha");
         return cartaDatos.sigIDder;//cambiar a derecha
-
-
     }
 
     public void UpdateCartaUI(bool ladoIzq)
     {
         nombreCarta.text = cartaDatos.nombreCarta;
         descripcionCarta.text = cartaDatos.descripcionCarta;
-
         imagen.sprite = cartaDatos.imagen;
-
-       if (cartaDatos.aleatoria)
+        //descripcionLado.text = cartaDatos.textoIzq;
+        
+        if (cartaDatos.aleatoria)
             SetSigID(ladoIzq);
     }
 

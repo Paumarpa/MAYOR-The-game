@@ -8,6 +8,8 @@ public class BaseCarta : ScriptableObject
     public int id;
     public string nombreCarta;
     public string descripcionCarta;
+    public string textoIzq;
+    public string textoDer;
 
     public Sprite imagen;
 
