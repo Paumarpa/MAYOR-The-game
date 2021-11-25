@@ -1956,8 +1956,6 @@ MonoBehaviour:
   faceSprite: {fileID: 21300000, guid: 187dca0ce46b5d644a7a0d50c61de498, type: 3}
   backSprite: {fileID: 21300000, guid: f6c096ea4635b644f841b8a2bb0bb696, type: 3}
   barajaSprite: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
-  verDescripcion: {fileID: 1273947068}
-  verFondo: {fileID: 1273947067}
   cartasQueUsamos:
   - {fileID: 11400000, guid: fd806eac3b095d6469225d43774e2de0, type: 2}
   - {fileID: 11400000, guid: 0c9b8fe6fef6775438deadbfad51cdb5, type: 2}
@@ -2431,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3232940635535557416, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3709566741267149577, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_IsActive
@@ -2499,16 +2497,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
---- !u!1 &1273947067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3232940635535557416, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
-  m_PrefabInstance: {fileID: 1273947066}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1273947068 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8601887509936321694, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
-  m_PrefabInstance: {fileID: 1273947066}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1277838223
 GameObject:
   m_ObjectHideFlags: 0
