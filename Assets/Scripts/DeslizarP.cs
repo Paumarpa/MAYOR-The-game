@@ -66,6 +66,9 @@ public class DeslizarP : MonoBehaviour
         
         if (carta.transform.position.x > 2) //PARA LA DERECHA
         {
+            cs.descripcionLado.enabled = true;
+
+            cs.descripcionLado.text = cs.cartaDatos.textoDer;
             spr.color = Color.green;
             if (Input.GetMouseButtonUp(0))
             {
@@ -79,11 +82,10 @@ public class DeslizarP : MonoBehaviour
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
                 spr.sprite = backSprite;
-                facedUp = false;
-                cs.imagen.enabled = false;
-                cs.nombreCarta.enabled = false;
-                cs.descripcionCarta.enabled = false;
-                cs.fondoTexto.enabled = false;
+               
+                cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
+                
+                
                 if (coroutineAllowed )
                 {
                     StartCoroutine(RotateNewCard());
@@ -92,6 +94,9 @@ public class DeslizarP : MonoBehaviour
         }
         else if (carta.transform.position.x < -2)   //PARA LA IZQUIERDA
         {
+            cs.descripcionLado.enabled = true;
+
+            cs.descripcionLado.text = cs.cartaDatos.textoIzq;
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
@@ -118,6 +123,7 @@ public class DeslizarP : MonoBehaviour
         }
         else
         {
+            cs.descripcionLado.enabled = false;
             spr.color = Color.white;
         }
 

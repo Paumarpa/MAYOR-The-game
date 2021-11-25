@@ -16,6 +16,8 @@ MonoBehaviour:
   nombreCarta: Fallo Electrico
   descripcionCarta: "Est\xE1n ocurriendo fallos en el alumbrado de la ciudad, los
     aldeanos exigen que se solucione"
+  textoIzq: texto izq
+  textoDer: texto der
   imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
   izqElect: 1
   izqGente: -2
