@@ -11,7 +11,12 @@ public class DeslizarP : MonoBehaviour
     public GameObject carta;
     public GameObject baraja;
     public cardscript cs;
-    public ModificaTamaño stats;
+
+    public ModificaTamaño statElectricidad;
+    public ModificaTamaño statGente;
+    public ModificaTamaño statFelicidad;
+    public ModificaTamaño statDinero;
+    public ModificaTamaño statComida;
 
     SpriteRenderer spr;
     public float velCarta = .5f;
@@ -22,8 +27,9 @@ public class DeslizarP : MonoBehaviour
     [SerializeField]
 
     private Sprite faceSprite, backSprite, barajaSprite;
-    public GameObject infoCarta;
-    public GameObject descCarta;
+
+
+
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
@@ -76,6 +82,7 @@ public class DeslizarP : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 Debug.Log("caca");
+                ChangeStats(true);
                 int aux = cs.derecha();                //restan--;
 
                  SigCarta(aux);
@@ -103,6 +110,7 @@ public class DeslizarP : MonoBehaviour
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
+                ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
 
@@ -168,7 +176,7 @@ public class DeslizarP : MonoBehaviour
             }
             cs.imagen.enabled = true;
             cs.nombreCarta.enabled = true;
-            cs.descripcionCarta.enabled = true;
+            cs.descripcionCarta.enabled = false;
             cs.fondoTexto.enabled = true;
 
             spr.sprite = faceSprite;
@@ -177,8 +185,7 @@ public class DeslizarP : MonoBehaviour
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 yield return new WaitForSeconds(tiempoRot);
             }
-            infoCarta.SetActive(true);
-            descCarta.SetActive(false);
+
         }
         if (facedUp)
         {
@@ -199,7 +206,7 @@ public class DeslizarP : MonoBehaviour
             }
             cs.imagen.enabled = false;
             cs.nombreCarta.enabled = false;
-            cs.descripcionCarta.enabled = false;
+            cs.descripcionCarta.enabled = true;
             cs.fondoTexto.enabled = false;
 
             spr.sprite = backSprite;
@@ -211,8 +218,7 @@ public class DeslizarP : MonoBehaviour
 
                 yield return new WaitForSeconds(tiempoRot);
             }
-            infoCarta.SetActive(false);
-            descCarta.SetActive(true);
+
         }
         coroutineAllowed = true;
 
@@ -244,5 +250,26 @@ public class DeslizarP : MonoBehaviour
         //coroutineAllowed = true;
 
         //facedUp = true;
+    }
+
+    private void ChangeStats(bool der)
+    {
+        if (der)
+        {
+            statElectricidad.ValorStat += cs.cartaDatos.derElect * 0.1f;
+            statGente.ValorStat += cs.cartaDatos.derGente * 0.1f;
+            statFelicidad.ValorStat += cs.cartaDatos.derFelic * 0.1f;
+            statDinero.ValorStat += cs.cartaDatos.derDinero * 0.1f;
+            statComida.ValorStat += cs.cartaDatos.derComida * 0.1f;
+        }
+        else
+        {
+            statElectricidad.ValorStat += cs.cartaDatos.izqElect * 0.1f;
+            statGente.ValorStat += cs.cartaDatos.izqGente * 0.1f;
+            statFelicidad.ValorStat += cs.cartaDatos.izqFelic * 0.1f;
+            statDinero.ValorStat += cs.cartaDatos.izqDinero * 0.1f;
+            statComida.ValorStat += cs.cartaDatos.izqComida * 0.1f;
+        }
+
     }
 }
