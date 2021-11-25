@@ -8,6 +8,8 @@ public class BaseCarta : ScriptableObject
     public int id;
     public string nombreCarta;
     public string descripcionCarta;
+    public string textoIzq;
+    public string textoDer;
 
     public Sprite imagen;
 
@@ -22,4 +24,8 @@ public class BaseCarta : ScriptableObject
     public int derFelic;
     public int derDinero;
     public int derComida;
+
+    public int sigIDizq;
+    public int sigIDder;
+    public bool aleatoria;
 }
