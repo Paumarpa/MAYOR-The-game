@@ -23,6 +23,7 @@ public class DeslizarP : MonoBehaviour
 
     private Sprite faceSprite, backSprite, barajaSprite;
     public GameObject infoCarta;
+    public GameObject descCarta;
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
@@ -139,6 +140,7 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
             }
             infoCarta.SetActive(true);
+            descCarta.SetActive(false);
         }
         if (facedUp)
         {
@@ -152,6 +154,7 @@ public class DeslizarP : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
             }
             infoCarta.SetActive(false);
+            descCarta.SetActive(true);
         }
         coroutineAllowed = true;
 
