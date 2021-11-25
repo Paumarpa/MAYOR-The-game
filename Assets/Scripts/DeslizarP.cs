@@ -11,26 +11,30 @@ public class DeslizarP : MonoBehaviour
     public GameObject carta;
     public GameObject baraja;
     public cardscript cs;
-    public ModificaTamaÒo stats;
+    public ModificaTama√±o stats;
 
     SpriteRenderer spr;
     public float velCarta = .5f;
 
+
+    
     //giro carta
     [SerializeField]
 
     private Sprite faceSprite, backSprite, barajaSprite;
-
+    public GameObject infoCarta;
+    public GameObject descCarta;
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
     /*
     public int restan = 2;
     private static int anyosEnPoder = 0;
-    public string stringAnyos = " AÒos";
+    public string stringAnyos = " A√±os";
 
     public Text textAnyos;
     */
+
     [SerializeField] private BaseCarta[] cartasQueUsamos;
 
     private void SigCarta(int cartaPos)
@@ -53,10 +57,9 @@ public class DeslizarP : MonoBehaviour
     void Update()
     {
         //rotacion de la carta al moverse
-        if (coroutineAllowed)   //no est· en la coroutina, por lo que no choca con ello
+        if (coroutineAllowed)   //no est√° en la coroutina, por lo que no choca con ello
             carta.transform.rotation = Quaternion.Euler(0f, 0f, -2 * carta.transform.position.x);
 
-       
 
         if (coroutineAllowed && Input.GetMouseButtonDown(1))
         {
@@ -146,7 +149,11 @@ public class DeslizarP : MonoBehaviour
 
     private IEnumerator RotateCard(float tiempoRotacion)
     {
+
+        
+
         float tiempoRot = tiempoRotacion;
+
         coroutineAllowed = false;
 
         if (!facedUp)
@@ -170,6 +177,8 @@ public class DeslizarP : MonoBehaviour
                 carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 yield return new WaitForSeconds(tiempoRot);
             }
+            infoCarta.SetActive(true);
+            descCarta.SetActive(false);
         }
         if (facedUp)
         {
@@ -202,7 +211,8 @@ public class DeslizarP : MonoBehaviour
 
                 yield return new WaitForSeconds(tiempoRot);
             }
-
+            infoCarta.SetActive(false);
+            descCarta.SetActive(true);
         }
         coroutineAllowed = true;
 

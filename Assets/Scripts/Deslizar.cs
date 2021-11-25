@@ -9,7 +9,11 @@ public class Deslizar : MonoBehaviour
     //public static int electricidad;
 
     public GameObject carta;
+
+
+
     public GameObject baraja;
+
     public cardscript cs;
     public ModificaTamaño stats;
 
