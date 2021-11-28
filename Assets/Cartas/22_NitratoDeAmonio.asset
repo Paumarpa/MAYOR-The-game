@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 22_NitratoDeAmonio
   m_EditorClassIdentifier: 
-  id: 0
-  nombreCarta: 
-  descripcionCarta: 
-  textoIzq: 
-  textoDer: 
-  imagen: {fileID: 0}
+  id: 22
+  nombreCarta: Nitrato de que?
+  descripcionCarta: Los horticultores piden que compre Nitrato de Amonio como fertilizante
+  textoIzq: "Ellos sabr\xE1n lo que hacen"
+  textoDer: "\xBFQu\xE9 pu\xF1etas es eso?"
+  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
-  izqDinero: 0
-  izqComida: 0
+  izqDinero: -1
+  izqComida: 2
   derElect: 0
   derGente: 0
   derFelic: 0
-  derDinero: 0
-  derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  derDinero: 2
+  derComida: -1
+  sigIDizq: 23
+  sigIDder: 24
   aleatoria: 0

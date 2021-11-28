@@ -12,22 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 23A_ConsecuenciasNitrato_1
   m_EditorClassIdentifier: 
-  id: 0
-  nombreCarta: 
-  descripcionCarta: 
-  textoIzq: 
-  textoDer: 
-  imagen: {fileID: 0}
+  id: 23
+  nombreCarta: Contaminado
+  descripcionCarta: Un mal uso del nitrato de amonio contamina los cultivos de esta
+    temporada
+  textoIzq: "Parece que no sab\xEDan lo que hac\xEDan"
+  textoDer: "\xA1\xBFQU\xC9?!"
+  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
   izqElect: 0
-  izqGente: 0
+  izqGente: -3
   izqFelic: 0
-  izqDinero: 0
+  izqDinero: -2
   izqComida: 0
   derElect: 0
-  derGente: 0
+  derGente: -3
   derFelic: 0
-  derDinero: 0
+  derDinero: -2
   derComida: 0
   sigIDizq: 0
   sigIDder: 0
-  aleatoria: 0
+  aleatoria: 1

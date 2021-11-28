@@ -18,17 +18,17 @@ MonoBehaviour:
     hacer algo"
   textoIzq: Cubriremos la demanda comprando
   textoDer: "Hay problemas m\xE1s importantes"
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
   izqElect: 0
-  izqGente: 0
-  izqFelic: 0
-  izqDinero: 0
-  izqComida: 0
+  izqGente: 1
+  izqFelic: 1
+  izqDinero: -3
+  izqComida: 2
   derElect: 0
   derGente: 0
-  derFelic: 0
-  derDinero: 0
-  derComida: 0
+  derFelic: -1
+  derDinero: 3
+  derComida: -2
   sigIDizq: 0
   sigIDder: 0
-  aleatoria: 0
+  aleatoria: 1
