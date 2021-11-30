@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 6A_ConsecuenciasSpam_2
+  m_Name: 0_ConsecuenciasPlaca_1
   m_EditorClassIdentifier: 
-  id: 6
-  nombreCarta: Mucho servicio
-  descripcionCarta: Al final tanta llamada ha dado su fruto y se han ofrecido nuevos
-    puestos de trabajo
-  textoIzq: Todo ha salido a pedir de milhouse
-  textoDer: Esto viene que ni pintado
-  imagen: {fileID: 0}
-  izqElect: 0
-  izqGente: 2
+  id: 0
+  nombreCarta: Eclipse
+  descripcionCarta: "Tras depender demasiado de las placas solares varios d\xEDas
+    sin sol dejan sin luz al pueblo"
+  textoIzq: ...
+  textoDer: ...
+  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  izqElect: -2
+  izqGente: -1
   izqFelic: 0
-  izqDinero: 1
+  izqDinero: 0
   izqComida: 0
-  derElect: 0
-  derGente: 2
+  derElect: -2
+  derGente: -1
   derFelic: 0
-  derDinero: 1
+  derDinero: 0
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
-  aleatoria: 1
+  sigIDizq: 18
+  sigIDder: 18
+  aleatoria: 0

@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 3A_ConsecuenciasPlaca_2
+  m_Name: 2_ConsecuenciasSpam_1
   m_EditorClassIdentifier: 
-  id: 3
-  nombreCarta: Naranjos
-  descripcionCarta: "Hemos plantado unos naranjos donde ten\xEDamos pensado colocar
-    las placas, y este a\xF1o han salido riqu\xEDsimas!"
-  textoIzq: Mmm que ricas!
-  textoDer: "No suelen gustarme los c\xEDtricos"
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
-  izqElect: 0
+  id: 2
+  nombreCarta: Sin Servicio
+  descripcionCarta: "Nuestras instalaciones el\xE9ctricas no tienen clientes por
+    que no podemos comunicar nuestras servicios"
+  textoIzq: ...
+  textoDer: ...
+  imagen: {fileID: 21300000, guid: 7bab431a7437bca44926db9014adc173, type: 3}
+  izqElect: -2
   izqGente: 0
   izqFelic: 0
   izqDinero: 0
-  izqComida: 3
-  derElect: 0
+  izqComida: 0
+  derElect: -2
   derGente: 0
   derFelic: 0
   derDinero: 0
-  derComida: 3
+  derComida: 0
   sigIDizq: 0
   sigIDder: 0
-  aleatoria: 1
+  aleatoria: 0
