@@ -2487,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cartaOscura
       objectReference: {fileID: 0}
+    - target: {fileID: 7002524184743848371, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8920754368049135100, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_LocalPosition.z
       value: -2
