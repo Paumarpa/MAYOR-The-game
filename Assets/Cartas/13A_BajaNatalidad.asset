@@ -18,7 +18,7 @@ MonoBehaviour:
     m\xE1s bajas del mundo"
   textoIzq: Subir impuestos a los anticonceptivos
   textoDer: "Y a m\xED que me cuentas, que llamen a la cig\xFCe\xF1a o algo"
-  imagen: {fileID: 21300000, guid: 7bab431a7437bca44926db9014adc173, type: 3}
+  imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 0
   izqGente: 3
   izqFelic: -2
@@ -29,6 +29,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 3
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  sigIDizq: 19
+  sigIDder: 19
   aleatoria: 1

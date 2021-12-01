@@ -18,7 +18,7 @@ MonoBehaviour:
     clase
   textoIzq: "Invirtamos m\xE1s en educaci\xF3n"
   textoDer: "\xA1No m\xE1s clase! Mi sue\xF1o desde peque\xF1o"
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0
   izqGente: 1
   izqFelic: 2

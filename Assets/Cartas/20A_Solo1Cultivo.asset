@@ -12,18 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 20A_Solo1Cultivo
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   id: 0
   nombreCarta: 
   descripcionCarta: 
   textoIzq: 
   textoDer: 
   imagen: {fileID: 0}
+=======
+  id: 20
+  nombreCarta: Azafran o Laurel
+  descripcionCarta: "Esta temporada s\xF3lo podemos cultivar 1 tipo de especia, el
+    azafr\xE1n o laurel."
+  textoIzq: "Los Valencianos estar\xE1n orgullosos de que plantemos azafr\xE1n"
+  textoDer: Uff pensar en lentejas con laurel se me hace la boca agua
+  imagen: {fileID: 21300000, guid: 49d74904cd2f1834bb86a17b3cdf488c, type: 3}
+>>>>>>> Stashed changes
   izqElect: 0
   izqGente: 0
   izqFelic: 0
   izqDinero: 0
   izqComida: 0
   derElect: 0
+<<<<<<< Updated upstream
   derGente: 0
   derFelic: 0
   derDinero: 0
@@ -31,3 +42,12 @@ MonoBehaviour:
   sigIDizq: 0
   sigIDder: 0
   aleatoria: 0
+=======
+  derGente: 1
+  derFelic: 2
+  derDinero: 2
+  derComida: 1
+  sigIDizq: 13
+  sigIDder: 13
+  aleatoria: 1
+>>>>>>> Stashed changes

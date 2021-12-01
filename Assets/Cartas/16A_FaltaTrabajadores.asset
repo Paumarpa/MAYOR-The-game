@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Las empresas locales no tienen trabajadores suficientes
   textoIzq: Tenemos que bajar los requisitos para trabajar
   textoDer: Invirtamos en publicidad para trabajar en nuestro pueblo
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 0
   izqGente: 1
   izqFelic: 1

@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Las riadas son terribles, no damos a basto con solo nuestro cuerpo
   textoIzq: Voy a hacer un par de llamadas
   textoDer: "Agua que no has de beber d\xE9jala correr"
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 49d74904cd2f1834bb86a17b3cdf488c, type: 3}
   izqElect: 0
   izqGente: 1
   izqFelic: 3
@@ -28,6 +28,6 @@ MonoBehaviour:
   derFelic: -3
   derDinero: 2
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  sigIDizq: 21
+  sigIDder: 21
   aleatoria: 1

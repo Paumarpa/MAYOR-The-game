@@ -18,7 +18,7 @@ MonoBehaviour:
     aldeanos exigen que se solucione"
   textoIzq: Recomendar el uso de velas
   textoDer: Llamar a los electricistas
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 7f54b04f23ac9ba41b7dfee5e308ee0b, type: 3}
   izqElect: 1
   izqGente: -2
   izqFelic: -1
@@ -29,6 +29,6 @@ MonoBehaviour:
   derFelic: 1
   derDinero: -3
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  sigIDizq: 13
+  sigIDder: 13
   aleatoria: 1

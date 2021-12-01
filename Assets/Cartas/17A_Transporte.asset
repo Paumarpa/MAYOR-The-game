@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: "El transporte p\xFAblico pasa pocas veces por semana"
   textoIzq: Voy a hacer un par de llamadas
   textoDer: Comprate un coche anda
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 522901cd5adc66c42b311ae272dc0c99, type: 3}
   izqElect: 0
   izqGente: 2
   izqFelic: 2

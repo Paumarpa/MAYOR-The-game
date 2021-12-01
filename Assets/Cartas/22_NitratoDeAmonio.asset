@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 22_NitratoDeAmonio
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Cartas/22_NitratoDeAmonio.asset
   id: 0
   nombreCarta: 
   descripcionCarta: 
   textoIzq: 
   textoDer: 
   imagen: {fileID: 0}
+=======
+  id: 4
+  nombreCarta: Contaminado
+  descripcionCarta: Un mal uso del nitrato de amonio contamina los cultivos de esta
+    temporada
+  textoIzq: "Parece que no sab\xEDan lo que hac\xEDan"
+  textoDer: "\xA1\xBFQU\xC9?!"
+  imagen: {fileID: 21300000, guid: 8fd848557999ec24d966c0cb8ebfab8f, type: 3}
+>>>>>>> Stashed changes:Assets/Cartas/4_ConsecuenciasNitrato_1.asset
   izqElect: 0
   izqGente: 0
   izqFelic: 0
