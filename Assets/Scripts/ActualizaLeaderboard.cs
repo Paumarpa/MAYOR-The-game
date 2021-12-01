@@ -15,4 +15,9 @@ public class ActualizaLeaderboard : MonoBehaviour
     {
         
     }
+
+    public void Actualiza(string nombrePueblo, int nAnyos)
+    {
+
+    }
 }
