@@ -683,9 +683,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 366834767556381266, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1155746912752542308, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155746912752542308, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155746912752542308, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 3232940635535557416, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_IsActive
@@ -694,6 +706,22 @@ PrefabInstance:
     - target: {fileID: 3709566741267149577, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004551517815973446, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_text
+      value: Descripcion de la carta
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004551517815973446, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004551517815973446, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_fontStyle
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004551517815973446, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7002524184743848364, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_SortingOrder
@@ -909,15 +937,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8920754368049135100, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8920754368049135100, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.98
+      value: 2.74
       objectReference: {fileID: 0}
     - target: {fileID: 8920754368049135100, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.02
+      value: 0.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
@@ -1085,8 +1113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1, y: -5.65}
-  m_SizeDelta: {x: 37.3083, y: 7.6475}
+  m_AnchoredPosition: {x: 4.8, y: -6.02}
+  m_SizeDelta: {x: 36.5612, y: 8.0958}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244837543
 MonoBehaviour:
@@ -1149,9 +1177,15 @@ MonoBehaviour:
   - "\xBFVes esas cartas en el centro de la pantalla? Estas te presentaran decisiones
     que debes tomar respecto al pueblo.\n\xA1echales un vistazo! Puedes interactuar
     con ellas con los botones del raton."
-  - frase 4
-  - frase 5
-  - frase 6
+  - "\xA1bien hecho! Despues de tomar decisiones con las cartas, las estadisticas
+    del pueblo se veram afectadas.\n\xA1elije bien! si alguna de las estadisticas
+    llega a 0, ya te puedes despedir.\n"
+  - 'Utiliza tu intuicion y la logica para tomar la decision correcta y con ello
+    mejorar el pueblo.
+
+    Algunas de las cartas no son lo que piensas'
+  - "Parece que ya conoces todo lo necesario para poder gobernar en condiciones.\n\xA1a
+    por todas!"
   velocidadLetras: 0.03
   carta: {fileID: 2017208819}
   cs: {fileID: 2017208820}
@@ -1707,7 +1741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.74, y: 5.08}
+  m_AnchoredPosition: {x: -20.26, y: 2.8215995}
   m_SizeDelta: {x: 8.2022, y: 13.7389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067117573
