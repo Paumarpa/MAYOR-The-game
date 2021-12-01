@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class DeslizarP : MonoBehaviour
 {
 
-    //public static int electricidad;
-
     public GameObject carta;
     public GameObject baraja;
     public cardscript cs;
@@ -22,8 +20,6 @@ public class DeslizarP : MonoBehaviour
     public float velCarta = .5f;
 
 
-    
-    //giro carta
     [SerializeField]
 
     private Sprite faceSprite, backSprite, barajaSprite;
@@ -57,15 +53,28 @@ public class DeslizarP : MonoBehaviour
         spr.sprite = faceSprite;
         coroutineAllowed = true;
         facedUp = true;
+        cs.descripcionCarta.enabled = false;
+        cs.fondoTexto.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (cs.isMouseOver)
+        {
+            cs.descripcionCarta.enabled = true;
+            cs.fondoTexto.enabled = true;
+        }
+        else
+        {
+            cs.descripcionCarta.enabled = false;
+            cs.fondoTexto.enabled = false;
+        }
         //rotacion de la carta al moverse
-        if (coroutineAllowed)   //no está en la coroutina, por lo que no choca con ello
+        if (coroutineAllowed)
+        {  //no está en la coroutina, por lo que no choca con ello
             carta.transform.rotation = Quaternion.Euler(0f, 0f, -2 * carta.transform.position.x);
-
+        }
 
         if (coroutineAllowed && Input.GetMouseButtonDown(1))
         {
@@ -83,7 +92,8 @@ public class DeslizarP : MonoBehaviour
             {
                 Debug.Log("caca");
                 ChangeStats(true);
-                int aux = cs.derecha();                //restan--;
+                int aux = cs.derecha();        
+                //restan--;
 
                  SigCarta(aux);
                 cs.UpdateCartaUI(false);
@@ -93,7 +103,10 @@ public class DeslizarP : MonoBehaviour
 
                 spr.sprite = backSprite;
                
-                cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
+                cs.nombreCarta.enabled = false;
+                facedUp = false;    
+                cs.fondoTexto.enabled = false;
+                cs.imagen.enabled = false;
                 
                 
                 if (coroutineAllowed )
@@ -122,7 +135,6 @@ public class DeslizarP : MonoBehaviour
                 facedUp = false;
                 cs.imagen.enabled = false;
                 cs.nombreCarta.enabled = false;
-                cs.descripcionCarta.enabled = false;
                 cs.fondoTexto.enabled = false;
 
                 if (coroutineAllowed)
@@ -133,7 +145,7 @@ public class DeslizarP : MonoBehaviour
 
         }
         else
-        {
+        {  
             cs.descripcionLado.enabled = false;
             spr.color = Color.white;
         }
@@ -176,7 +188,6 @@ public class DeslizarP : MonoBehaviour
             }
             cs.imagen.enabled = true;
             cs.nombreCarta.enabled = true;
-            cs.descripcionCarta.enabled = false;
             cs.fondoTexto.enabled = true;
 
             spr.sprite = faceSprite;
@@ -206,7 +217,6 @@ public class DeslizarP : MonoBehaviour
             }
             cs.imagen.enabled = false;
             cs.nombreCarta.enabled = false;
-            cs.descripcionCarta.enabled = true;
             cs.fondoTexto.enabled = false;
 
             spr.sprite = backSprite;
