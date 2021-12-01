@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   nombreCarta: Fin del tutorial :D
-  descripcionCarta: Ale palante
+  descripcionCarta: Genial, lo vas pillando! Haz click  para contnuar.
   textoIzq: 
   textoDer: 
   imagen: {fileID: 0}

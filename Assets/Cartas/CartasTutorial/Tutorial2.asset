@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   nombreCarta: Tutorial2
-  descripcionCarta: aaa
-  textoIzq: aaa
-  textoDer: aaa
-  imagen: {fileID: 0}
-  izqElect: 0
+  descripcionCarta: al tomar decisiones se modifican las estadisticas
+  textoIzq: fijate en las estadisticas de energia y dinero
+  textoDer: fijate en las estadisticas de felicidad y comida
+  imagen: {fileID: 21300000, guid: da648f2b6a6250b4b94fd3a2ab058a5f, type: 3}
+  izqElect: 3
   izqGente: 0
   izqFelic: 0
-  izqDinero: 0
+  izqDinero: -3
   izqComida: 0
   derElect: 0
   derGente: 0
-  derFelic: 0
+  derFelic: 3
   derDinero: 0
-  derComida: 0
+  derComida: -3
   sigIDizq: 2
   sigIDder: 2
   aleatoria: 0

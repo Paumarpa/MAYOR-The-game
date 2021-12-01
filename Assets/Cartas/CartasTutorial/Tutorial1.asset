@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Aqui puedes ver la descrpcion de la carta
   textoIzq: Suelta para ir a la siguiente carta
   textoDer: Suelta para ir a la siguiente carta
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 9b487be943b42e545ba7b0d990e89b3e, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

@@ -1129,14 +1129,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19335172, g: 0.5188679, b: 0.5188679, a: 1}
+  m_Color: {r: 0.7075472, g: 0.61320776, b: 0.6107601, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b324a4685d480b346b084e8a5dbacbde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1efe8057929bf174aaff8d7736111eea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1178,12 +1178,12 @@ MonoBehaviour:
     que debes tomar respecto al pueblo.\n\xA1echales un vistazo! Puedes interactuar
     con ellas con los botones del raton."
   - "\xA1bien hecho! Despues de tomar decisiones con las cartas, las estadisticas
-    del pueblo se veram afectadas.\n\xA1elije bien! si alguna de las estadisticas
+    del pueblo se veran afectadas.\n\xA1elije bien! si alguna de las estadisticas
     llega a 0, ya te puedes despedir.\n"
   - 'Utiliza tu intuicion y la logica para tomar la decision correcta y con ello
     mejorar el pueblo.
 
-    Algunas de las cartas no son lo que piensas'
+    Algunas de las cartas no son lo que piensas...'
   - "Parece que ya conoces todo lo necesario para poder gobernar en condiciones.\n\xA1a
     por todas!"
   velocidadLetras: 0.03
