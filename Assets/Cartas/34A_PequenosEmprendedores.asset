@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 33A_Teletrabajo
+  m_Name: 34A_PequenosEmprendedores
   m_EditorClassIdentifier: 
-  id: 33
-  nombreCarta: Teletrabajo
-  descripcionCarta: Uf que malito estoy hoy, creo que he pillado el Cvid, si pudiera
-    trabajar desde casa...
-  textoIzq: Um, la verdad es que puedes suponer un problema, empecemos a teletrabajar!
-  textoDer: "Nada nada un catarro sin m\xE1s, ven que tienes que firmarme unas cosas"
+  id: 34
+  nombreCarta: Pequenos emprendedores
+  descripcionCarta: "Alcalde, si simplificasemos los tr\xE1mites para abrir nuevos
+    negocios, los peque\xF1os emprendedores entrar\xEDan sin parar!"
+  textoIzq: "Nuestro pueblo se convertir\xE1 pronto en un nuevo mundillo empresarial!"
+  textoDer: "A mi me encanta el papeleo, prefiero que siga as\xED"
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: -1
-  izqGente: 0
-  izqFelic: 1
-  izqDinero: -2
-  izqComida: 0
-  derElect: 1
-  derGente: 1
-  derFelic: -1
-  derDinero: 2
+  izqGente: 3
+  izqFelic: 2
+  izqDinero: 2
+  izqComida: -1
+  derElect: 2
+  derGente: -1
+  derFelic: 1
+  derDinero: 1
   derComida: 0
   sigIDizq: 0
   sigIDder: 0
