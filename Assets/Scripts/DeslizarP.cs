@@ -160,7 +160,7 @@ public class DeslizarP : MonoBehaviour
     private IEnumerator RotateCard(float tiempoRotacion)
     {
 
-
+        FindObjectOfType<audioManager>().Play("flipCard");
         float tiempoRot = tiempoRotacion;
 
         coroutineAllowed = false;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DeslizarP : MonoBehaviour
+public class Deslizar : MonoBehaviour
 {
 
     public GameObject carta;
