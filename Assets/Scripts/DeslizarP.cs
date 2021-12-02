@@ -81,6 +81,8 @@ public class DeslizarP : MonoBehaviour
             spr.color = Color.green;
             if (Input.GetMouseButtonUp(0))
             {
+                
+
                 Debug.Log("caca");
                 ChangeStats(true);
                 int aux = cs.derecha();                //restan--;
@@ -94,7 +96,7 @@ public class DeslizarP : MonoBehaviour
                 spr.sprite = backSprite;
                
                 cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
-                
+
                 
                 if (coroutineAllowed )
                 {
@@ -110,6 +112,8 @@ public class DeslizarP : MonoBehaviour
             spr.color = Color.red;
             if (Input.GetMouseButtonUp(0))
             {
+                
+
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
@@ -125,6 +129,7 @@ public class DeslizarP : MonoBehaviour
                 cs.descripcionCarta.enabled = false;
                 cs.fondoTexto.enabled = false;
 
+                
                 if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
@@ -223,6 +228,7 @@ public class DeslizarP : MonoBehaviour
         coroutineAllowed = true;
 
         facedUp = !facedUp;
+        FindObjectOfType<audioManager>().Play("flipCard");
     }
 
 
@@ -250,6 +256,7 @@ public class DeslizarP : MonoBehaviour
         //coroutineAllowed = true;
 
         //facedUp = true;
+        
     }
 
     private void ChangeStats(bool der)
