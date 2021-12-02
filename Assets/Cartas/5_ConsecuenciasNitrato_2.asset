@@ -30,4 +30,4 @@ MonoBehaviour:
   derComida: 3
   sigIDizq: 6
   sigIDder: 6
-  aleatoria: 0
+  aleatoria: 1
