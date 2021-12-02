@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 37A_MiHermana
+  m_Name: 38A_MiHermano
   m_EditorClassIdentifier: 
-  id: 37
-  nombreCarta: Mi hermana
-  descripcionCarta: "Mi hermana quiere abrir v\xEDas de escalada natural en la ladera
-    de la monta\xF1a, pero no tiene muchas esperanzas..."
-  textoIzq: Venga va, anda tira que en esas rocas te desmadras
-  textoDer: Pero si el twister vertical es mi pasatiempo favorito!
+  id: 38
+  nombreCarta: Mi hermano
+  descripcionCarta: "Mi hermano quiere replantar el bosque que se quem\xF3 hace unos
+    a\xF1os pero carece de fondos..."
+  textoIzq: "Nada nada, la naturaleza se replantar\xE1 ella sola"
+  textoDer: "Haremos una app que por cada hora que se utilice estudiando, se gane
+    fondos para plantar 1 \xE1rbol"
   imagen: {fileID: 21300000, guid: 633a8f418d4f72f498212fae77686247, type: 3}
   izqElect: 0
-  izqGente: -1
+  izqGente: 0
   izqFelic: -1
-  izqDinero: 2
+  izqDinero: 1
   izqComida: 0
   derElect: 0
-  derGente: 1
-  derFelic: 1
-  derDinero: -2
+  derGente: 0
+  derFelic: 2
+  derDinero: -1
   derComida: 0
   sigIDizq: 0
   sigIDder: 0
