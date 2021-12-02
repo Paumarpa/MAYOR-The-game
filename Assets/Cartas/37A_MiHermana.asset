@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 37
   nombreCarta: Mi hermana
-  descripcionCarta: "Mi hermana quiere abrir v\xEDas de escalada natural en la ladera
-    de la monta\xF1a, pero no tiene muchas esperanzas..."
+  descripcionCarta: Mi hermana quiere abrir vias de escalada natural en la ladera
+    de la montana, pero no tiene muchas esperanzas...
   textoIzq: Venga va, anda tira que en esas rocas te desmadras
   textoDer: Pero si el twister vertical es mi pasatiempo favorito!
   imagen: {fileID: 21300000, guid: 633a8f418d4f72f498212fae77686247, type: 3}

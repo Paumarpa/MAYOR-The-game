@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 30
   nombreCarta: Mejora sanitaria
-  descripcionCarta: "No podemos depender de una peque\xF1a cl\xEDnica para un pueblo
-    en expansi\xF3n, haga algo alcalde!"
+  descripcionCarta: No podemos depender de una pequena clinica para un pueblo en
+    expansion, haga algo alcalde!
   textoIzq: Creo que te has equivocado de persona eh, yo no soy el alcade...
   textoDer: Mejorar oferta sanitaria
   imagen: {fileID: 21300000, guid: c15df9c726f281f47a72c32eb3eff7ad, type: 3}

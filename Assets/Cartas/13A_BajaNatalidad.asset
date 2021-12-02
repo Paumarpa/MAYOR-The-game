@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 13
   nombreCarta: Baja natalidad
-  descripcionCarta: "Espa\xF1a necesita beb\xE9s: tiene una de las tasas de natalidad
-    m\xE1s bajas del mundo"
+  descripcionCarta: 'Espana necesita bebes: tiene una de las tasas de natalidad mas
+    bajas del mundo'
   textoIzq: Subir impuestos a los anticonceptivos
-  textoDer: "Y a m\xED que me cuentas, que llamen a la cig\xFCe\xF1a o algo"
+  textoDer: Y a mi que me cuentas, que llamen a la ciguena o algo
   imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 0
   izqGente: 3

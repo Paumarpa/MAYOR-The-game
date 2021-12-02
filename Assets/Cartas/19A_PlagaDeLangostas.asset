@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 19
   nombreCarta: Langostas
-  descripcionCarta: "Una plaga de langostas est\xE1 devastando los cultivos"
+  descripcionCarta: Una plaga de langostas esta devastando los cultivos
   textoIzq: He oido que a las gallinas y a los patos les encantan
   textoDer: Bombardeadlos con pesticidas
   imagen: {fileID: 21300000, guid: 522901cd5adc66c42b311ae272dc0c99, type: 3}

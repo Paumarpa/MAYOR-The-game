@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 21
   nombreCarta: Semillas actualizadas
-  descripcionCarta: "Un mercader trae semillas que est\xE1n modificadas gen\xE9ticamente"
+  descripcionCarta: Un mercader trae semillas que estan modificadas geneticamente
   textoIzq: Comprar semillas de patatas
   textoDer: Comprar semillas de calabazas
   imagen: {fileID: 21300000, guid: 083aceb3917068e42bbce195300d2c28, type: 3}

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   nombreCarta: Naranjos
-  descripcionCarta: "Hemos plantado unos naranjos donde ten\xEDamos pensado colocar
-    las placas, y este a\xF1o han salido riqu\xEDsimas!"
+  descripcionCarta: Hemos plantado unos naranjos donde teniamos pensado colocar las
+    placas, y este ano han salido riquisimas!
   textoIzq: Mmm que ricas!
   textoDer: "No suelen gustarme los c\xEDtricos"
   imagen: {fileID: 21300000, guid: 9f571ced50014f14a838baba438d4d70, type: 3}

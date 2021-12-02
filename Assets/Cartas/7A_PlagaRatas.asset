@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   nombreCarta: Plaga
-  descripcionCarta: "Una plaga de ratas est\xE1 royendo los cables de las casas"
+  descripcionCarta: Una plaga de ratas esta royendo los cables de las casas
   textoIzq: Traed muchos gatitos, o llamad a hamelin
   textoDer: Llamad a los exterminadores
   imagen: {fileID: 21300000, guid: 522901cd5adc66c42b311ae272dc0c99, type: 3}

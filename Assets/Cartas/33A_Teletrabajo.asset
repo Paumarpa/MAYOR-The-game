@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Uf que malito estoy hoy, creo que he pillado el Cvid, si pudiera
     trabajar desde casa...
   textoIzq: Um, la verdad es que puedes suponer un problema, empecemos a teletrabajar!
-  textoDer: "Nada nada un catarro sin m\xE1s, ven que tienes que firmarme unas cosas"
+  textoDer: Nada nada un catarro sin mas, ven que tienes que firmarme unas cosas
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: -1
   izqGente: 0

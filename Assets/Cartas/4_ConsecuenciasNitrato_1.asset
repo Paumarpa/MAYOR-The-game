@@ -16,8 +16,8 @@ MonoBehaviour:
   nombreCarta: Contaminado
   descripcionCarta: Un mal uso del nitrato de amonio contamina los cultivos de esta
     temporada
-  textoIzq: "Parece que no sab\xEDan lo que hac\xEDan"
-  textoDer: "\xA1\xBFQU\xC9?!"
+  textoIzq: "Parece que no sab\xEDan lo que hacian"
+  textoDer: "\xA1\xBFQUE?!"
   imagen: {fileID: 21300000, guid: 8fd848557999ec24d966c0cb8ebfab8f, type: 3}
   izqElect: 0
   izqGente: -3

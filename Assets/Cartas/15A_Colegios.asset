@@ -16,8 +16,8 @@ MonoBehaviour:
   nombreCarta: Colegios
   descripcionCarta: Los colegios no tienen suficientes alumnos como para hacer una
     clase
-  textoIzq: "Invirtamos m\xE1s en educaci\xF3n"
-  textoDer: "\xA1No m\xE1s clase! Mi sue\xF1o desde peque\xF1o"
+  textoIzq: Invirtamos mas en educacion
+  textoDer: "\xA1No mas clase! Mi sueno desde pequeno"
   imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 0
   izqGente: 1

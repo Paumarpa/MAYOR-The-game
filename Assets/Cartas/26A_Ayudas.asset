@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 26
   nombreCarta: Ayudas
-  descripcionCarta: "El presidente ofrece ayudas para los pueblos afectados por la
-    despoblaci\xF3n!"
+  descripcionCarta: El presidente ofrece ayudas para los pueblos afectados por la
+    despoblacion!
   textoIzq: Uff uff menos mal
   textoDer: YA ERA HORA
   imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}

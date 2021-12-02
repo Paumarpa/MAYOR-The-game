@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 28
   nombreCarta: Poblacion joven
-  descripcionCarta: "Tenemos que mantener a los j\xF3venes dentro del pueblo o perderemos
-    cada vez mas gente si los mandmos a las ciudades..."
-  textoIzq: "Creo que deber\xEDan ir a donde les diera la gana..."
+  descripcionCarta: Tenemos que mantener a los jovenes dentro del pueblo o perderemos
+    cada vez mas gente si los mandmos a las ciudades...
+  textoIzq: Creo que deberian ir a donde les diera la gana...
   textoDer: Ummm ofrezcamos ofertas de trabajo asequibles!
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 0

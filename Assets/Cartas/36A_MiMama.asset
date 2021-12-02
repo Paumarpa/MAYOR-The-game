@@ -16,8 +16,7 @@ MonoBehaviour:
   nombreCarta: Mi madre
   descripcionCarta: Mi madre es una de las mejores apicultoras, pero en el pueblo
     casi nadie le compra mucha miel...
-  textoIzq: "Ayudemosla a crear una tienda online y asi podr\xE1 vender fuera del
-    pueblo"
+  textoIzq: Ayudemosla a crear una tienda online y asi podra vender fuera del pueblo
   textoDer: "Ma\xF1ana mismo le compro 20 botes"
   imagen: {fileID: 21300000, guid: 633a8f418d4f72f498212fae77686247, type: 3}
   izqElect: -1

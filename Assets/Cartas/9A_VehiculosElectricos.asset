@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 9
   nombreCarta: Vehiculos electricos
-  descripcionCarta: "La UE exige transitar a veh\xEDculos el\xE9ctricos"
-  textoIzq: "Seguro que unos eurillos les har\xE1 cambiar de idea"
+  descripcionCarta: "La UE exige transitar a veh\xEDculos electricos"
+  textoIzq: Seguro que unos eurillos les hara cambiar de ideao
   textoDer: Transitar a electricos
   imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 1

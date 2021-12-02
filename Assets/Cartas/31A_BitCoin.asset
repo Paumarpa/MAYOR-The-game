@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 31
   nombreCarta: BitCoin!
-  descripcionCarta: "He o\xEDdo de una nueva moda de invertir en bitCoin, deber\xEDamos
-    sumarnos!"
+  descripcionCarta: He oido de una nueva moda de invertir en bitCoin, deberiamos
+    sumarnos!
   textoIzq: "Deber\xEDamos ir poco a poco con esta \"moda\""
   textoDer: Tu sabes lo que contamina eso chaval!?
   imagen: {fileID: 21300000, guid: 9e0d8d4cf513cb44584d4340b4946e66, type: 3}

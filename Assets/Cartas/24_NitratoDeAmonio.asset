@@ -15,9 +15,9 @@ MonoBehaviour:
   id: 2
   nombreCarta: Nitrato de que?
   descripcionCarta: Los horticultores piden que compre Nitrato de Amonio como fertilizante
-  textoIzq: "Ellos sabr\xE1n lo que hacen"
-  textoDer: "\xBFQu\xE9 pu\xF1etas es eso?"
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  textoIzq: Ellos sabran lo que hacen
+  textoDer: "\xBFQue punetas es eso?"
+  imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   nombreCarta: Eclipse
-  descripcionCarta: "Tras depender demasiado de las placas solares varios d\xEDas
-    sin sol dejan sin luz al pueblo"
+  descripcionCarta: Tras depender demasiado de las placas solares varios dias sin
+    sol dejan sin luz al pueblo
   textoIzq: ...
   textoDer: ...
   imagen: {fileID: 21300000, guid: 7f54b04f23ac9ba41b7dfee5e308ee0b, type: 3}

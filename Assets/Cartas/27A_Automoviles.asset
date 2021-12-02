@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 27
   nombreCarta: Oh no...
-  descripcionCarta: "La empresa autom\xF3vilistica del pueblo quiere cerrar, no podemos
-    permitirlo muchas familias se quedar\xE1n sin trabajo!"
-  textoIzq: "La situaci\xF3n es mucho m\xE1s complicada de lo que te piensas..."
-  textoDer: "La situaci\xF3n es complicada, pero creo que podemos hacer algo"
+  descripcionCarta: La empresa automovilistica del pueblo quiere cerrar, no podemos
+    permitirlo muchas familias se quedaran sin trabajo!
+  textoIzq: La situacion es mucho mas complicada de lo que te piensas...
+  textoDer: La situacion es complicada, pero creo que podemos hacer algo
   imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 1
   izqGente: -3

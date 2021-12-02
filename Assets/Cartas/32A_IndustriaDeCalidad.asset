@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 32
   nombreCarta: Mejorar industria
-  descripcionCarta: "Alcalde, si potenciamos la industria agroalimentaria de calidad,
-    nuestro pueblo se ver\xE1 extremedamente favorecido!"
+  descripcionCarta: Alcalde, si potenciamos la industria agroalimentaria de calidad,
+    nuestro pueblo se vera extremedamente favorecido!
   textoIzq: Nada nada, todo para nosotros.
-  textoDer: "Que buen\xEDsima idea, pongamos anuncios en internet para anunciarnos
-    m\xE1s"
+  textoDer: Que buenisima idea, pongamos anuncios en internet para anunciarnos mas
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 2
   izqGente: -1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 10
   nombreCarta: Bajan las electricas
-  descripcionCarta: "\xA1Las compa\xF1\xEDas el\xE9ctricas han bajado los precios!"
+  descripcionCarta: "\xA1Las companias electricas han bajado los precios!"
   textoIzq: "\xA1Ya era hora!"
   textoDer: "\xA1OLE!"
   imagen: {fileID: 21300000, guid: 150712890f7684f498962b8b3d9d251c, type: 3}

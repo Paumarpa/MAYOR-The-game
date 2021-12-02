@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 40
   nombreCarta: Salvame mandarina
-  descripcionCarta: "La se\xF1al de la TV no es constante y as\xED no puedo ver mi
-    telenovela"
+  descripcionCarta: La senal de la TV no es constante y asi no puedo ver mi telenovela
   textoIzq: Conseguir mejores antenas
   textoDer: Es que estamos cortos de fondos
   imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}

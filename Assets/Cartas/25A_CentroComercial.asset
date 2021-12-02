@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 25
   nombreCarta: Centro comercial
-  descripcionCarta: "Buen d\xEDa! Quiero construir un centro comercial!"
-  textoIzq: "SI! Quedar\xEDa perfecto al lado del parque"
+  descripcionCarta: Buen dia! Quiero construir un centro comercial!
+  textoIzq: SI! Quedaria perfecto al lado del parque
   textoDer: Me niego
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: -1

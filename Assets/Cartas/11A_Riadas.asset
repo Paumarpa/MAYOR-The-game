@@ -16,7 +16,7 @@ MonoBehaviour:
   nombreCarta: Riadas
   descripcionCarta: Las riadas son terribles, no damos a basto con solo nuestro cuerpo
   textoIzq: Voy a hacer un par de llamadas
-  textoDer: "Agua que no has de beber d\xE9jala correr"
+  textoDer: Agua que no has de beber dejala correr
   imagen: {fileID: 21300000, guid: c15df9c726f281f47a72c32eb3eff7ad, type: 3}
   izqElect: 0
   izqGente: 1

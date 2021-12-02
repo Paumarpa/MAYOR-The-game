@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   nombreCarta: PlacasSolares
-  descripcionCarta: "La electricidad es un bien de primera necesidad, sustituir un
-    campo de cultivo por un campo de placas solares aportar\xEDa la electricidad
-    necesaria"
+  descripcionCarta: La electricidad es un bien de primera necesidad, sustituir un
+    campo de cultivo por un campo de placas solares aportaria la electricidad necesaria
   textoIzq: Si
   textoDer: No
   imagen: {fileID: 21300000, guid: bf5664cfce4bfb54fab1ce60ccdf426d, type: 3}

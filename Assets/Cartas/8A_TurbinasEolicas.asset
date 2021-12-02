@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 8
   nombreCarta: Turbinas
   descripcionCarta: "Alcalde, al estar en un valle \xBFno cree que instalar turbinas
-    e\xF3licas ser\xEDa una fantastica inversi\xF3n?"
-  textoIzq: "Mi segundo nombre es e\xF3lico"
+    eolicas seria una fantastica inversion?"
+  textoIzq: Mi segundo nombre es eolico
   textoDer: No, no lo creo
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 3

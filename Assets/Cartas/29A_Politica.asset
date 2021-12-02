@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 29
   nombreCarta: Politica
-  descripcionCarta: "El gobierno no da margen para nuevas pol\xEDticas prorurales,
-    debemos hacer algo!"
-  textoIzq: "Tienes toda la raz\xF3n, ma\xF1ana voy a proponer en la sede nuevas
-    medidas!"
+  descripcionCarta: El gobierno no da margen para nuevas politicas prorurales, debemos
+    hacer algo!
+  textoIzq: Tienes toda la razon, manana voy a proponer en la sede nuevas medidas!
   textoDer: No hay mucho que pueda hacer...
   imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0

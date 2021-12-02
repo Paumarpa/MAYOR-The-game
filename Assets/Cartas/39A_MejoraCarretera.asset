@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 39
   nombreCarta: Mejorar carreteras
-  descripcionCarta: "Oiga jefe, lo hemos tenido complicado para llegar hasta aqu\xED,
-    deber\xEDa plantearse mejorar la carretera..."
+  descripcionCarta: Oiga jefe, lo hemos tenido complicado para llegar hasta aqui,
+    deberia plantearse mejorar la carretera...
   textoIzq: Tengo un amigo que nos puede hacer una ofertita para mejorarlas
   textoDer: Con los huecos esos nos ahorramos pasta en baches!
   imagen: {fileID: 21300000, guid: c15df9c726f281f47a72c32eb3eff7ad, type: 3}
