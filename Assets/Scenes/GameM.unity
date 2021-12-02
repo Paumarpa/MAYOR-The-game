@@ -413,6 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorStat: 0
+  m_Animator: {fileID: 350000678}
 --- !u!95 &350000678
 Animator:
   serializedVersion: 3
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorStat: 0
+  m_Animator: {fileID: 688540050}
 --- !u!95 &688540050
 Animator:
   serializedVersion: 3
@@ -1609,6 +1611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorStat: 0
+  m_Animator: {fileID: 900260798}
 --- !u!95 &900260798
 Animator:
   serializedVersion: 3
@@ -2575,6 +2578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorStat: 0
+  m_Animator: {fileID: 1225159077}
 --- !u!95 &1225159077
 Animator:
   serializedVersion: 3
@@ -3864,6 +3868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValorStat: 0
+  m_Animator: {fileID: 1652119822}
 --- !u!95 &1652119822
 Animator:
   serializedVersion: 3
