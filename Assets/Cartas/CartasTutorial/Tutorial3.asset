@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Genial, lo vas pillando! Haz click  para contnuar.
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 92bca8a1e85b6be42a9bd1f46d2a1023, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

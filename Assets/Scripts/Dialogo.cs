@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Dialogo : MonoBehaviour
 {
@@ -94,10 +96,11 @@ public class Dialogo : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            Debug.Log("a jugar");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+
         }
 
-         void escondeUI()
+        void escondeUI()
         {
             canvastexto.enabled = false;
         }
