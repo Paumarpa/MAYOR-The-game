@@ -90,6 +90,7 @@ public class DeslizarP : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+
                 ChangeStats(true);
                 int aux = cs.derecha();        
                 //restan--;
@@ -100,7 +101,14 @@ public class DeslizarP : MonoBehaviour
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
-                ocultarUIcarta();
+
+                //spr.sprite = backSprite;
+               
+                //cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
+
+                
+
+                //ocultarUIcarta();
                  
                 if (coroutineAllowed )
                 {
@@ -117,6 +125,8 @@ public class DeslizarP : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+                
+
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
@@ -129,6 +139,7 @@ public class DeslizarP : MonoBehaviour
 
                 ocultarUIcarta();
 
+                
                 if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
@@ -208,6 +219,7 @@ public class DeslizarP : MonoBehaviour
         coroutineAllowed = true;
 
         facedUp = !facedUp;
+        FindObjectOfType<audioManager>().Play("flipCard");
     }
 
 
@@ -222,6 +234,7 @@ public class DeslizarP : MonoBehaviour
 
             StartCoroutine(RotateCard(0.02f));
         }
+
 
     }
 
