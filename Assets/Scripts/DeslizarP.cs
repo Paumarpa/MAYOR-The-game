@@ -80,7 +80,7 @@ public class DeslizarP : MonoBehaviour
             lastRoutine = StartCoroutine(RotateCard(0.02f));
         }
 
-        
+
         if (carta.transform.position.x > 2) //PARA LA DERECHA
         {
 
@@ -90,27 +90,19 @@ public class DeslizarP : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-
                 ChangeStats(true);
-                int aux = cs.derecha();        
+                int aux = cs.derecha();
                 //restan--;
 
-                 SigCarta(aux);
+                SigCarta(aux);
                 cs.UpdateCartaUI(false);
                 //cs.cartaDatos.derElect  - - - - > acceder a las estadisticas de carta
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
+                ocultarUIcarta();
 
-                //spr.sprite = backSprite;
-               
-                //cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
-
-                
-
-                //ocultarUIcarta();
-                 
-                if (coroutineAllowed )
+                if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
                 }
@@ -125,8 +117,6 @@ public class DeslizarP : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                
-
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
@@ -139,7 +129,6 @@ public class DeslizarP : MonoBehaviour
 
                 ocultarUIcarta();
 
-                
                 if (coroutineAllowed)
                 {
                     StartCoroutine(RotateNewCard());
@@ -148,7 +137,7 @@ public class DeslizarP : MonoBehaviour
 
         }
         else
-        {  
+        {
             cs.descripcionLado.enabled = false;
             spr.color = Color.white;
         }
@@ -178,10 +167,10 @@ public class DeslizarP : MonoBehaviour
 
         if (!facedUp)
         {
-              
+
             for (float i = 0f; i <= 90f; i += 10f)
             {
-                carta.transform.rotation = Quaternion.Euler(0f, i, 0f); 
+                carta.transform.rotation = Quaternion.Euler(0f, i, 0f);
                 yield return new WaitForSeconds(tiempoRot);
             }
             cs.imagen.enabled = true;
@@ -219,7 +208,6 @@ public class DeslizarP : MonoBehaviour
         coroutineAllowed = true;
 
         facedUp = !facedUp;
-        FindObjectOfType<audioManager>().Play("flipCard");
     }
 
 
@@ -227,14 +215,13 @@ public class DeslizarP : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);//tiempo de espera para girar nueva carta
         coroutineAllowed = false;
-        
+
         if (!facedUp)
         {
 
 
             StartCoroutine(RotateCard(0.02f));
         }
-
 
     }
 
