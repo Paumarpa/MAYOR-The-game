@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: "Una plaga de ratas est\xE1 royendo los cables de las casas"
   textoIzq: Traed muchos gatitos, o llamad a hamelin
   textoDer: Llamad a los exterminadores
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 522901cd5adc66c42b311ae272dc0c99, type: 3}
   izqElect: -1
   izqGente: 0
   izqFelic: 2
@@ -28,6 +28,6 @@ MonoBehaviour:
   derFelic: 2
   derDinero: -2
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  sigIDizq: 11
+  sigIDder: 11
   aleatoria: 1

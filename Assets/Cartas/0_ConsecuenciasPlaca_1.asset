@@ -18,7 +18,7 @@ MonoBehaviour:
     sin sol dejan sin luz al pueblo"
   textoIzq: ...
   textoDer: ...
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 7f54b04f23ac9ba41b7dfee5e308ee0b, type: 3}
   izqElect: -2
   izqGente: -1
   izqFelic: 0

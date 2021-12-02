@@ -18,7 +18,7 @@ MonoBehaviour:
     temporada
   textoIzq: "Parece que no sab\xEDan lo que hac\xEDan"
   textoDer: "\xA1\xBFQU\xC9?!"
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 8fd848557999ec24d966c0cb8ebfab8f, type: 3}
   izqElect: 0
   izqGente: -3
   izqFelic: 0

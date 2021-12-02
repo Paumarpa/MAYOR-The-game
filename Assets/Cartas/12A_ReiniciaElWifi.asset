@@ -18,7 +18,7 @@ MonoBehaviour:
     antenas de banda ancha"
   textoIzq: SI que el Lol me va lento
   textoDer: Pues a mi me va bien
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 2f41d04f09a1d2a428fefb132b11bc6f, type: 3}
   izqElect: -1
   izqGente: 2
   izqFelic: 1

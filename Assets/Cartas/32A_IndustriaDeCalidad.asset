@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 16A_FaltaTrabajadores
+  m_Name: 32A_IndustriaDeCalidad
   m_EditorClassIdentifier: 
-  id: 16
-  nombreCarta: Faltan trabajadores
-  descripcionCarta: Las empresas locales no tienen trabajadores suficientes
-  textoIzq: Tenemos que bajar los requisitos para trabajar
-  textoDer: Invirtamos en publicidad para trabajar en nuestro pueblo
+  id: 32
+  nombreCarta: Mejorar industria
+  descripcionCarta: "Alcalde, si potenciamos la industria agroalimentaria de calidad,
+    nuestro pueblo se ver\xE1 extremedamente favorecido!"
+  textoIzq: Nada nada, todo para nosotros.
+  textoDer: "Que buen\xEDsima idea, pongamos anuncios en internet para anunciarnos
+    m\xE1s"
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
-  izqElect: 0
-  izqGente: 1
+  izqElect: 2
+  izqGente: -1
   izqFelic: 1
-  izqDinero: -1
-  izqComida: 0
-  derElect: 0
+  izqDinero: 2
+  izqComida: 1
+  derElect: -1
   derGente: 2
   derFelic: 1
-  derDinero: -2
-  derComida: 0
+  derDinero: 3
+  derComida: -1
   sigIDizq: 0
   sigIDder: 0
   aleatoria: 1

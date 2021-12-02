@@ -18,7 +18,7 @@ MonoBehaviour:
     azafr\xE1n o laurel."
   textoIzq: "Los Valencianos estar\xE1n orgullosos de que plantemos azafr\xE1n"
   textoDer: Uff pensar en lentejas con laurel se me hace la boca agua
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0
   izqGente: 1
   izqFelic: 2

@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 3_ConsecuenciasSpam_2
+  m_Name: 28A_SeNosVanLosJovenes
   m_EditorClassIdentifier: 
-  id: 3
-  nombreCarta: Mucho servicio
-  descripcionCarta: Al final tanta llamada ha dado su fruto y se han ofrecido nuevos
-    puestos de trabajo
-  textoIzq: Todo ha salido a pedir de milhouse
-  textoDer: Esto viene que ni pintado
+  id: 28
+  nombreCarta: Poblacion joven
+  descripcionCarta: "Tenemos que mantener a los j\xF3venes dentro del pueblo o perderemos
+    cada vez mas gente si los mandmos a las ciudades..."
+  textoIzq: "Creo que deber\xEDan ir a donde les diera la gana..."
+  textoDer: Ummm ofrezcamos ofertas de trabajo asequibles!
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 0
-  izqGente: 2
-  izqFelic: 0
-  izqDinero: 1
+  izqGente: -2
+  izqFelic: -1
+  izqDinero: 3
   izqComida: 0
   derElect: 0
-  derGente: 2
-  derFelic: 0
-  derDinero: 1
+  derGente: 1
+  derFelic: 1
+  derDinero: -3
   derComida: 0
   sigIDizq: 0
   sigIDder: 0
-  aleatoria: 0
+  aleatoria: 1

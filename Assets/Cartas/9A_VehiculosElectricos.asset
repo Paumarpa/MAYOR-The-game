@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: "La UE exige transitar a veh\xEDculos el\xE9ctricos"
   textoIzq: "Seguro que unos eurillos les har\xE1 cambiar de idea"
   textoDer: Transitar a electricos
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 1
   izqGente: 0
   izqFelic: 0

@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 3_ConsecuenciasSpam_2
+  m_Name: 33A_Teletrabajo
   m_EditorClassIdentifier: 
-  id: 3
-  nombreCarta: Mucho servicio
-  descripcionCarta: Al final tanta llamada ha dado su fruto y se han ofrecido nuevos
-    puestos de trabajo
-  textoIzq: Todo ha salido a pedir de milhouse
-  textoDer: Esto viene que ni pintado
+  id: 33
+  nombreCarta: Teletrabajo
+  descripcionCarta: Uf que malito estoy hoy, creo que he pillado el Cvid, si pudiera
+    trabajar desde casa...
+  textoIzq: Um, la verdad es que puedes suponer un problema, empecemos a teletrabajar!
+  textoDer: "Nada nada un catarro sin m\xE1s, ven que tienes que firmarme unas cosas"
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: 0
-  izqGente: 2
+  izqGente: 0
   izqFelic: 0
-  izqDinero: 1
+  izqDinero: 0
   izqComida: 0
   derElect: 0
-  derGente: 2
+  derGente: 0
   derFelic: 0
-  derDinero: 1
+  derDinero: 0
   derComida: 0
   sigIDizq: 0
   sigIDder: 0

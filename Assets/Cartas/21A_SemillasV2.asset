@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: "Un mercader trae semillas que est\xE1n modificadas gen\xE9ticamente"
   textoIzq: Comprar semillas de patatas
   textoDer: Comprar semillas de calabazas
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 083aceb3917068e42bbce195300d2c28, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

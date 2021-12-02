@@ -19,7 +19,7 @@ MonoBehaviour:
     necesaria"
   textoIzq: Si
   textoDer: No
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: bf5664cfce4bfb54fab1ce60ccdf426d, type: 3}
   izqElect: 3
   izqGente: -2
   izqFelic: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
     despoblaci\xF3n!"
   textoIzq: Uff uff menos mal
   textoDer: YA ERA HORA
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 0
   izqGente: 1
   izqFelic: 2
