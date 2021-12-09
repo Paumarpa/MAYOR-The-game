@@ -595,10 +595,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowColor: {r: 1, g: 1, b: 1, a: 1}
-  glowBrightness: 3.51
+  glowColor: {r: 1, g: 0.99195415, b: 0.0990566, a: 1}
+  glowBrightness: 2.95
   outlineWidth: 1
-  alphaThreshold: 0.01
+  alphaThreshold: 0
   drawOutside: 0
   enableInstancing: 0
 --- !u!1 &415365866
@@ -2729,6 +2729,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4354049877147793184, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354049877147793184, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.56
+      objectReference: {fileID: 0}
     - target: {fileID: 7002524184743848364, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2801,7 +2809,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.08
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6647377516770339969, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
 --- !u!1 &1277838223
 GameObject:

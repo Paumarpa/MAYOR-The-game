@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SpriteGlow;
 
 public class DeslizarP : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DeslizarP : MonoBehaviour
     public GameObject carta;
     public GameObject baraja;
     public cardscript cs;
+
+    SpriteGlowEffect spriteglow;
 
     public ModificaTamaño statElectricidad;
     public ModificaTamaño statGente;
@@ -49,6 +52,8 @@ public class DeslizarP : MonoBehaviour
     {
         //INICIALIZAR VALORES DE LA ESCENA
         spr = carta.GetComponent<SpriteRenderer>();
+        spriteglow = carta.GetComponent<SpriteGlowEffect>();
+        spriteglow.enabled = false;
         spr.sprite = faceSprite;
         coroutineAllowed = true;
         facedUp = true;
@@ -86,7 +91,8 @@ public class DeslizarP : MonoBehaviour
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoDer;
-            spr.color = Color.green; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            spriteglow.enabled = true;
+            //spr.color = Color.green; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -113,7 +119,8 @@ public class DeslizarP : MonoBehaviour
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoIzq;
-            spr.color = Color.red; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            spriteglow.enabled = true;
+            //spr.color = Color.red; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -139,6 +146,7 @@ public class DeslizarP : MonoBehaviour
         else
         {
             cs.descripcionLado.enabled = false;
+            spriteglow.enabled = false;
             spr.color = Color.white;
         }
 
