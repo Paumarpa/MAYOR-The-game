@@ -46,7 +46,12 @@ public class DeslizarA : MonoBehaviour
 
     private void SigCarta(int cartaPos)
     {
-        cs.cartaDatos = cartasQueUsamos[cartaPos];
+        //Solo salatamos a la siguiente carta si no hemos perdidpo por (pasarnos/quedarnos cortos) con un stat
+        if(
+            statElectricidad.ValorStat >  0 && statGente.ValorStat >  0 && statFelicidad.ValorStat >  0 && statDinero.ValorStat >  0 && statComida.ValorStat >  0 &&
+            statElectricidad.ValorStat <= 1 && statGente.ValorStat <= 1 && statFelicidad.ValorStat <= 1 && statDinero.ValorStat <= 1 && statComida.ValorStat <= 1
+           )
+            cs.cartaDatos = cartasQueUsamos[cartaPos];
     }
 
     // Start is called before the first frame update
@@ -253,7 +258,54 @@ public class DeslizarA : MonoBehaviour
             statDinero.ValorStat += cs.cartaDatos.izqDinero * 0.1f;
             statComida.ValorStat += cs.cartaDatos.izqComida * 0.1f;
         }
+        // Si es MENOR O IGUAL a 0 saltamos a una carta concreta de derrota
+        if (statElectricidad.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[0];
+        }
+        else if (statGente.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[1];
+        }
+        else if (statFelicidad.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[2];
+        }
+        else if (statDinero.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[3];
+        }
+        else if (statComida.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[4];
+        }
 
+        // Si es MAYOR que 1 saltamos a una carta concreta de derrota
+        else if (statElectricidad.ValorStat > 1)
+        {
+            cs.cartaDatos = cartasQueUsamos[0];
+            statElectricidad.ValorStat = 1.1f;
+        }
+        else if (statGente.ValorStat <= 0)
+        {
+            cs.cartaDatos = cartasQueUsamos[1];
+            statGente.ValorStat = 1.1f;
+        }
+        else if (statFelicidad.ValorStat > 1)
+        {
+            cs.cartaDatos = cartasQueUsamos[2];
+            statFelicidad.ValorStat = 1.1f;
+        }
+        else if (statDinero.ValorStat > 1)
+        {
+            cs.cartaDatos = cartasQueUsamos[3];
+            statDinero.ValorStat = 1.1f;
+        }
+        else if (statComida.ValorStat > 1)
+        {
+            cs.cartaDatos = cartasQueUsamos[4];
+            statComida.ValorStat = 1.1f;
+        }
     }
 
     private void ocultarUIcarta()
