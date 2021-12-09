@@ -34,19 +34,13 @@ public class DeslizarP : MonoBehaviour
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
-    /*
-    public int restan = 2;
-    private static int anyosEnPoder = 0;
-    public string stringAnyos = " Años";
-
-    public Text textAnyos;
-    */
+    
 
     [SerializeField] private BaseCarta[] cartasQueUsamos;
 
     public void RandomGenerator()
     {
-        DiasTranscurridos = DiasTranscurridos + Random.Range(10, 41);
+        DiasTranscurridos = DiasTranscurridos + Random.Range(10, 25);
         TextoDias.GetComponent<TextMeshProUGUI>().text = DiasTranscurridos + " dias como alcalde";
     }
 
