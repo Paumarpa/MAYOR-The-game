@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 369433589}
   - component: {fileID: 369433588}
   - component: {fileID: 369433587}
+  - component: {fileID: 369433590}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -460,6 +461,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &369433590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369433586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 369433589}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 33
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &432994500
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +829,10 @@ PrefabInstance:
     - target: {fileID: 7002524184743848364, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002524184743848364, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7002524184743848365, guid: fe4f5ee727d493b4d8f3d2ac7c7db5c4, type: 3}
       propertyPath: m_RootOrder
@@ -1547,6 +1612,7 @@ GameObject:
   - component: {fileID: 1332077996}
   - component: {fileID: 1332077995}
   - component: {fileID: 1332077994}
+  - component: {fileID: 1332077997}
   m_Layer: 0
   m_Name: Game manager
   m_TagString: Untagged
@@ -1670,10 +1736,12 @@ MonoBehaviour:
   statFelicidad: {fileID: 432994503}
   statDinero: {fileID: 1400893847}
   statComida: {fileID: 1277518047}
+  DiasTranscurridos: 0
   velCarta: 0.5
   faceSprite: {fileID: 21300000, guid: 187dca0ce46b5d644a7a0d50c61de498, type: 3}
   backSprite: {fileID: 21300000, guid: f6c096ea4635b644f841b8a2bb0bb696, type: 3}
   barajaSprite: {fileID: 21300000, guid: 0d4d6d8400f6133498eba917cab282ab, type: 3}
+  TextoDias: {fileID: 0}
   cartasQueUsamos:
   - {fileID: 11400000, guid: 1ea9e5f388526174e87ef6c1006fdf69, type: 2}
   - {fileID: 11400000, guid: f911f3fd980551c4db759977b30a36f3, type: 2}
@@ -1693,6 +1761,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1332077997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332077993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: c62aaa46a78ea9a4186cf6c25c8978fe, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &1375532444
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2276,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa9acc1a52a19747acbfdc26b365ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2017208824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017208819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.9433962, g: 0.35065857, b: 0.35065857, a: 1}
+  glowBrightness: 9.33
+  outlineWidth: 1
+  alphaThreshold: 0
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!1 &2067117571
 GameObject:
   m_ObjectHideFlags: 0
