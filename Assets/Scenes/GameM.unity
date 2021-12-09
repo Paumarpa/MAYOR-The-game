@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowColor: {r: 1, g: 0.99195415, b: 0.0990566, a: 1}
-  glowBrightness: 2.63
+  glowBrightness: 4.28
   outlineWidth: 1
   alphaThreshold: 0
   drawOutside: 0
@@ -2536,6 +2536,7 @@ GameObject:
   - component: {fileID: 977011271}
   - component: {fileID: 977011270}
   - component: {fileID: 977011272}
+  - component: {fileID: 977011273}
   m_Layer: 0
   m_Name: Game manager
   m_TagString: Untagged
@@ -2642,6 +2643,23 @@ MonoBehaviour:
   comida: {fileID: 1652119821}
   electricidad: {fileID: 1225159076}
   dinero: {fileID: 900260797}
+--- !u!114 &977011273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977011269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 0dcac628bac9bcf469aadd0a53ffb6b0, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &1021894475
 GameObject:
   m_ObjectHideFlags: 0
