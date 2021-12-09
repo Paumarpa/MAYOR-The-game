@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using SpriteGlow;
 
@@ -18,6 +19,7 @@ public class DeslizarP : MonoBehaviour
     public ModificaTamaño statFelicidad;
     public ModificaTamaño statDinero;
     public ModificaTamaño statComida;
+    public int DiasTranscurridos = 0;
 
     SpriteRenderer spr;
     public float velCarta = .5f;
@@ -27,7 +29,7 @@ public class DeslizarP : MonoBehaviour
 
     private Sprite faceSprite, backSprite, barajaSprite;
 
-
+    [SerializeField] public TextMeshProUGUI TextoDias;
 
     private bool coroutineAllowed, facedUp;
 
@@ -41,6 +43,12 @@ public class DeslizarP : MonoBehaviour
     */
 
     [SerializeField] private BaseCarta[] cartasQueUsamos;
+
+    public void RandomGenerator()
+    {
+        DiasTranscurridos = DiasTranscurridos + Random.Range(10, 41);
+        TextoDias.GetComponent<TextMeshProUGUI>().text = DiasTranscurridos + " dias como alcalde";
+    }
 
     private void SigCarta(int cartaPos)
     {
@@ -99,7 +107,7 @@ public class DeslizarP : MonoBehaviour
                 ChangeStats(true);
                 int aux = cs.derecha();
                 //restan--;
-
+                RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(false);
                 //cs.cartaDatos.derElect  - - - - > acceder a las estadisticas de carta
@@ -127,7 +135,7 @@ public class DeslizarP : MonoBehaviour
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
-
+                RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(true);
 
