@@ -49,8 +49,6 @@ public class cardscript : MonoBehaviour
         //cartaDatos.luz += cartaDatos.izqElect;
        // Debug.Log("has escogida izquierda");
         Debug.Log(cartaDatos.id + "es mi id jeje");
-        if (cartaDatos.id == 0)
-            SceneManager.
 
         return cartaDatos.sigIDizq;
     }
