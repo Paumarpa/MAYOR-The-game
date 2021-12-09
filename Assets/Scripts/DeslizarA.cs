@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using SpriteGlow;
+using UnityEngine.SceneManagement;
 
 public class DeslizarA : MonoBehaviour
 {
@@ -47,10 +48,7 @@ public class DeslizarA : MonoBehaviour
     private void SigCarta(int cartaPos)
     {
         //Solo salatamos a la siguiente carta si no hemos perdidpo por (pasarnos/quedarnos cortos) con un stat
-        if(
-            statElectricidad.ValorStat >  0 && statGente.ValorStat >  0 && statFelicidad.ValorStat >  0 && statDinero.ValorStat >  0 && statComida.ValorStat >  0 &&
-            statElectricidad.ValorStat <= 1 && statGente.ValorStat <= 1 && statFelicidad.ValorStat <= 1 && statDinero.ValorStat <= 1 && statComida.ValorStat <= 1
-           )
+        if(esDerrota())
             cs.cartaDatos = cartasQueUsamos[cartaPos];
     }
 
@@ -103,9 +101,14 @@ public class DeslizarA : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+                if (esDerrota() && cs.cartaDatos.nombreCarta == "Derrota")
+                {
+                    PlayerPrefs.SetInt("player_score", DiasTranscurridos);
+                    SceneManager.LoadScene("LeaderBoard");
+                }
+                        
                 ChangeStats(true);
                 int aux = cs.derecha();
-                //restan--;
                 RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(false);
@@ -131,9 +134,14 @@ public class DeslizarA : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+                if (esDerrota() && cs.cartaDatos.nombreCarta == "Derrota")
+                {
+                    PlayerPrefs.SetInt("player_score", DiasTranscurridos);
+                    SceneManager.LoadScene("LeaderBoard");
+                }
+
                 ChangeStats(false);
                 int aux = cs.izquierda();
-                //restan--;
                 RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(true);
@@ -240,6 +248,14 @@ public class DeslizarA : MonoBehaviour
 
     }
 
+    private bool esDerrota()
+    {
+        if ((statElectricidad.ValorStat > 0 && statGente.ValorStat > 0 && statFelicidad.ValorStat > 0 && statDinero.ValorStat > 0 && statComida.ValorStat > 0 &&
+            statElectricidad.ValorStat <= 1 && statGente.ValorStat <= 1 && statFelicidad.ValorStat <= 1 && statDinero.ValorStat <= 1 && statComida.ValorStat <= 1))
+            return false;
+        return true;
+    }
+
     private void ChangeStats(bool der)
     {
         if (der)
@@ -261,49 +277,49 @@ public class DeslizarA : MonoBehaviour
         // Si es MENOR O IGUAL a 0 saltamos a una carta concreta de derrota
         if (statElectricidad.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[0];
+            cs.cartaDatos = cartasQueUsamos[41];
         }
         else if (statGente.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[1];
+            cs.cartaDatos = cartasQueUsamos[42];
         }
         else if (statFelicidad.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[2];
+            cs.cartaDatos = cartasQueUsamos[43];
         }
         else if (statDinero.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[3];
+            cs.cartaDatos = cartasQueUsamos[44];
         }
         else if (statComida.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[4];
+            cs.cartaDatos = cartasQueUsamos[45];
         }
 
         // Si es MAYOR que 1 saltamos a una carta concreta de derrota
         else if (statElectricidad.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[0];
+            cs.cartaDatos = cartasQueUsamos[46];
             statElectricidad.ValorStat = 1.1f;
         }
         else if (statGente.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[1];
+            cs.cartaDatos = cartasQueUsamos[47];
             statGente.ValorStat = 1.1f;
         }
         else if (statFelicidad.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[2];
+            cs.cartaDatos = cartasQueUsamos[48];
             statFelicidad.ValorStat = 1.1f;
         }
         else if (statDinero.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[3];
+            cs.cartaDatos = cartasQueUsamos[49];
             statDinero.ValorStat = 1.1f;
         }
         else if (statComida.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[4];
+            cs.cartaDatos = cartasQueUsamos[50];
             statComida.ValorStat = 1.1f;
         }
     }

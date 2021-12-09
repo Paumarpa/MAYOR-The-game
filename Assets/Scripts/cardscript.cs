@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class cardscript : MonoBehaviour
 {
@@ -48,7 +48,8 @@ public class cardscript : MonoBehaviour
     {
         //cartaDatos.luz += cartaDatos.izqElect;
        // Debug.Log("has escogida izquierda");
-        Debug.Log(cartaDatos.id + "es mi id jeje");
+        Debug.Log(cartaDatos.id + " es mi id jeje, y " + cartaDatos.name + " mi nombre");
+        
 
         return cartaDatos.sigIDizq;
     }
@@ -56,6 +57,8 @@ public class cardscript : MonoBehaviour
     public int derecha()
     {
         // Debug.Log("derecha");
+
+
         return cartaDatos.sigIDder;//cambiar a derecha
     }
 
