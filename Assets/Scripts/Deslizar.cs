@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
+using SpriteGlow;
 
 public class Deslizar : MonoBehaviour
 {
@@ -10,11 +12,14 @@ public class Deslizar : MonoBehaviour
     public GameObject baraja;
     public cardscript cs;
 
+    SpriteGlowEffect spriteglow;
+
     public ModificaTamaño statElectricidad;
     public ModificaTamaño statGente;
     public ModificaTamaño statFelicidad;
     public ModificaTamaño statDinero;
     public ModificaTamaño statComida;
+    public int DiasTranscurridos = 0;
 
     SpriteRenderer spr;
     public float velCarta = .5f;
@@ -24,20 +29,20 @@ public class Deslizar : MonoBehaviour
 
     private Sprite faceSprite, backSprite, barajaSprite;
 
-
+    [SerializeField] public TextMeshProUGUI TextoDias;
 
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
-    /*
-    public int restan = 2;
-    private static int anyosEnPoder = 0;
-    public string stringAnyos = " Años";
 
-    public Text textAnyos;
-    */
 
     [SerializeField] private BaseCarta[] cartasQueUsamos;
+
+    public void RandomGenerator()
+    {
+        DiasTranscurridos = DiasTranscurridos + Random.Range(10, 25);
+        TextoDias.GetComponent<TextMeshProUGUI>().text = DiasTranscurridos + " dias como alcalde";
+    }
 
     private void SigCarta(int cartaPos)
     {
@@ -49,6 +54,8 @@ public class Deslizar : MonoBehaviour
     {
         //INICIALIZAR VALORES DE LA ESCENA
         spr = carta.GetComponent<SpriteRenderer>();
+        spriteglow = carta.GetComponent<SpriteGlowEffect>();
+        spriteglow.enabled = false;
         spr.sprite = faceSprite;
         coroutineAllowed = true;
         facedUp = true;
@@ -86,29 +93,22 @@ public class Deslizar : MonoBehaviour
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoDer;
-            spr.color = Color.green; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            spriteglow.enabled = true;
+            //spr.color = Color.green; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
-
                 ChangeStats(true);
                 int aux = cs.derecha();
                 //restan--;
-
+                RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(false);
                 //cs.cartaDatos.derElect  - - - - > acceder a las estadisticas de carta
                 //aqui se carga siguiente carta
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
-
-                //spr.sprite = backSprite;
-
-                //cs.nombreCarta.enabled = false; facedUp = false;cs.descripcionCarta.enabled = false;cs.fondoTexto.enabled = false;cs.imagen.enabled = false;
-
-
-
-                //ocultarUIcarta();
+                ocultarUIcarta();
 
                 if (coroutineAllowed)
                 {
@@ -121,16 +121,15 @@ public class Deslizar : MonoBehaviour
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoIzq;
-            spr.color = Color.red; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            spriteglow.enabled = true;
+            //spr.color = Color.red; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
-
-
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 //restan--;
-
+                RandomGenerator();
                 SigCarta(aux);
                 cs.UpdateCartaUI(true);
 
@@ -138,7 +137,6 @@ public class Deslizar : MonoBehaviour
                 //tambien se tiene que actualizar el siguiente dorso de la baraja
 
                 ocultarUIcarta();
-
 
                 if (coroutineAllowed)
                 {
@@ -150,6 +148,7 @@ public class Deslizar : MonoBehaviour
         else
         {
             cs.descripcionLado.enabled = false;
+            spriteglow.enabled = false;
             spr.color = Color.white;
         }
 
@@ -171,7 +170,7 @@ public class Deslizar : MonoBehaviour
     private IEnumerator RotateCard(float tiempoRotacion)
     {
 
-
+        FindObjectOfType<audioManager>().Play("flipCard");
         float tiempoRot = tiempoRotacion;
 
         coroutineAllowed = false;
@@ -219,7 +218,6 @@ public class Deslizar : MonoBehaviour
         coroutineAllowed = true;
 
         facedUp = !facedUp;
-        FindObjectOfType<audioManager>().Play("flipCard");
     }
 
 
@@ -234,7 +232,6 @@ public class Deslizar : MonoBehaviour
 
             StartCoroutine(RotateCard(0.02f));
         }
-
 
     }
 
