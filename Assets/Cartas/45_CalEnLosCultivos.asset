@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 45_PerderComida
+  m_Name: 45_CalEnLosCultivos
   m_EditorClassIdentifier: 
   id: 45
-  nombreCarta: Derrota
-  descripcionCarta: "Te quedaste sin comida y el pueblo se revel\xF3 en tu contra"
-  textoIzq: 
-  textoDer: 
-  imagen: {fileID: 0}
+  nombreCarta: Exceso de cal
+  descripcionCarta: Alcalde, la cal de los campos de cultivo esta corrompiendo a
+    las zanahorias...
+  textoIzq: Bah, tonterias
+  textoDer: Desechad los cultivos
+  imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0
   izqGente: 0
-  izqFelic: 0
-  izqDinero: 0
-  izqComida: 0
+  izqFelic: -3
+  izqDinero: 3
+  izqComida: 2
   derElect: 0
   derGente: 0
-  derFelic: 0
-  derDinero: 0
-  derComida: 0
-  sigIDizq: 45
-  sigIDder: 45
+  derFelic: -3
+  derDinero: 3
+  derComida: 2
+  sigIDizq: -2
+  sigIDder: -3
   aleatoria: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 49_PasarseDinero
+  m_Name: 67_PasarseFelicidad
   m_EditorClassIdentifier: 
-  id: 49
+  id: 67
   nombreCarta: Derrota
-  descripcionCarta: Te pasaste de dinero y el las empresas se revelaron en tu contra
+  descripcionCarta: Te pasaste de felicidad y el pueblo se abalanzo sobre ti
   textoIzq: 
   textoDer: 
   imagen: {fileID: 0}
@@ -28,6 +28,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigIDizq: 49
-  sigIDder: 49
+  sigIDizq: 68
+  sigIDder: 68
   aleatoria: 0

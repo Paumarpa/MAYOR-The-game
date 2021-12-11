@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: 47_PasarseGente
+  m_Name: 61_PerderGente
   m_EditorClassIdentifier: 
-  id: 47
+  id: 6
   nombreCarta: Derrota
-  descripcionCarta: "Te psaste de gente y el pueblo se revel\xF3 en tu contra"
-  textoIzq: 
-  textoDer: 
+  descripcionCarta: "Te quedaste sin gennte y nadie? se revel\xF3 en tu contra"
+  textoIzq: ...
+  textoDer: ...
   imagen: {fileID: 0}
   izqElect: 0
   izqGente: 0
@@ -28,6 +28,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigIDizq: 47
-  sigIDder: 47
+  sigIDizq: 62
+  sigIDder: 62
   aleatoria: 0
