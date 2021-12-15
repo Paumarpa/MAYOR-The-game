@@ -18,32 +18,39 @@ public class leaderboardScript : MonoBehaviour
     int diasJugador;
     static List<string> listaNombrePueblos = new List<string>();
     static List<int> listaDiasPueblos = new List<int>();
+    public bool primeraVez = true;
 
     private void Start()
     {
         diasJugador = PlayerPrefs.GetInt("player_score");
-        listaNombrePueblos.Add("Benicasim");
-        listaDiasPueblos.Add(100);
-        listaNombrePueblos.Add("Altea");
-        listaDiasPueblos.Add(90);
-        listaNombrePueblos.Add("Villareal");
-        listaDiasPueblos.Add(80);
-        listaNombrePueblos.Add("Burjasot");
-        listaDiasPueblos.Add(70);
-        listaNombrePueblos.Add("Paiporta");
-        listaDiasPueblos.Add(60);
-        listaNombrePueblos.Add("Onda");
-        listaDiasPueblos.Add(50);
-        listaNombrePueblos.Add("Peniscola");
-        listaDiasPueblos.Add(40);
-        listaNombrePueblos.Add("Benidorm");
-        listaDiasPueblos.Add(30);
-
-
-        for (int i = 0; i < listaDiasPueblos.Count; i++)
+        if (primeraVez)
         {
-            insertaFila((i+1).ToString(), listaNombrePueblos[i], listaDiasPueblos[i]);
+            listaNombrePueblos.Add("Benicasim");
+            listaDiasPueblos.Add(100);
+            listaNombrePueblos.Add("Altea");
+            listaDiasPueblos.Add(90);
+            listaNombrePueblos.Add("Villareal");
+            listaDiasPueblos.Add(80);
+            listaNombrePueblos.Add("Burjasot");
+            listaDiasPueblos.Add(70);
+            listaNombrePueblos.Add("Paiporta");
+            listaDiasPueblos.Add(60);
+            listaNombrePueblos.Add("Onda");
+            listaDiasPueblos.Add(50);
+            listaNombrePueblos.Add("Peniscola");
+            listaDiasPueblos.Add(40);
+            listaNombrePueblos.Add("Benidorm");
+            listaDiasPueblos.Add(30);
+            for (int i = 0; i < listaDiasPueblos.Count; i++)
+            {
+                insertaFila((i + 1).ToString(), listaNombrePueblos[i], listaDiasPueblos[i]);
+            }
+            primeraVez = false;
         }
+        
+
+
+        
     }
 
     private void addValue(string pueblo)
