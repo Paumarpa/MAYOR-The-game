@@ -48,7 +48,7 @@ public class DeslizarA : MonoBehaviour
     private void SigCarta(int cartaPos)
     {
         //Solo salatamos a la siguiente carta si no hemos perdidpo por (pasarnos/quedarnos cortos) con un stat
-        if(esDerrota())
+        if(!esDerrota())
             cs.cartaDatos = cartasQueUsamos[cartaPos];
     }
 
