@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: Lab15
   m_EditorClassIdentifier: 
-  id: 0
+  id: 15
   nombreCarta: 
   descripcionCarta: 
   textoIzq: 
