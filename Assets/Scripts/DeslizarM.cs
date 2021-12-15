@@ -4,8 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using SpriteGlow;
+using UnityEngine.SceneManagement;
 
-public class DeslizarP : MonoBehaviour
+public class DeslizarM : MonoBehaviour
 {
 
     public GameObject carta;
@@ -14,11 +15,11 @@ public class DeslizarP : MonoBehaviour
 
     SpriteGlowEffect spriteglow;
 
-    public ModificaTamaÃ±o statElectricidad;
-    public ModificaTamaÃ±o statGente;
-    public ModificaTamaÃ±o statFelicidad;
-    public ModificaTamaÃ±o statDinero;
-    public ModificaTamaÃ±o statComida;
+    public ModificaTamaño statElectricidad;
+    public ModificaTamaño statGente;
+    public ModificaTamaño statFelicidad;
+    public ModificaTamaño statDinero;
+    public ModificaTamaño statComida;
     public int DiasTranscurridos = 0;
 
     SpriteRenderer spr;
@@ -34,7 +35,7 @@ public class DeslizarP : MonoBehaviour
     private bool coroutineAllowed, facedUp;
 
     Coroutine lastRoutine;
-    
+
 
     [SerializeField] private BaseCarta[] cartasQueUsamos;
 
@@ -78,7 +79,7 @@ public class DeslizarP : MonoBehaviour
         }
         //rotacion de la carta al moverse
         if (coroutineAllowed)
-        {  //no estÃ¡ en la coroutina, por lo que no choca con ello
+        {  //no está en la coroutina, por lo que no choca con ello
             carta.transform.rotation = Quaternion.Euler(0f, 0f, -2 * carta.transform.position.x);
         }
 
@@ -94,7 +95,7 @@ public class DeslizarP : MonoBehaviour
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoDer;
             spriteglow.enabled = true;
-            //spr.color = Color.green; //AÃ‘ADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            //spr.color = Color.green; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -122,7 +123,7 @@ public class DeslizarP : MonoBehaviour
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoIzq;
             spriteglow.enabled = true;
-            //spr.color = Color.red; //AÃ‘ADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
+            //spr.color = Color.red; //AÑADIR EFECTO PARA VER QUE SE VA A ELEGIR A LA CARTA
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -254,7 +255,10 @@ public class DeslizarP : MonoBehaviour
             statComida.ValorStat += cs.cartaDatos.izqComida * 0.1f;
         }
 
-
+        if(statElectricidad.ValorStat<0 || statGente.ValorStat<0 || statFelicidad.ValorStat<0 || statDinero.ValorStat<0 || statComida.ValorStat < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
 
     }
 
