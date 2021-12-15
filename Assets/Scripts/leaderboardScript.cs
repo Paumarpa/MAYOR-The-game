@@ -18,12 +18,11 @@ public class leaderboardScript : MonoBehaviour
     int diasJugador;
     static List<string> listaNombrePueblos = new List<string>();
     static List<int> listaDiasPueblos = new List<int>();
-    public bool primeraVez = true;
 
     private void Start()
     {
         diasJugador = PlayerPrefs.GetInt("player_score");
-        if (primeraVez)
+        if (listaNombrePueblos.Count == 0)
         {
             listaNombrePueblos.Add("Benicasim");
             listaDiasPueblos.Add(100);
@@ -45,12 +44,7 @@ public class leaderboardScript : MonoBehaviour
             {
                 insertaFila((i + 1).ToString(), listaNombrePueblos[i], listaDiasPueblos[i]);
             }
-            primeraVez = false;
         }
-        
-
-
-        
     }
 
     private void addValue(string pueblo)
