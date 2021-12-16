@@ -19,12 +19,12 @@ MonoBehaviour:
   textoIzq: ...
   textoDer: ...
   imagen: {fileID: 21300000, guid: a609fdf018ceb37408e47f8386aa439a, type: 3}
-  izqElect: -2
+  izqElect: -1
   izqGente: 0
   izqFelic: 0
   izqDinero: 0
   izqComida: 0
-  derElect: -2
+  derElect: -1
   derGente: 0
   derFelic: 0
   derDinero: 0

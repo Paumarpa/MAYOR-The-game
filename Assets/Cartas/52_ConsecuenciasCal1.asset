@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: -3_ConsecuenciasCal2
+  m_Name: 52_ConsecuenciasCal1
   m_EditorClassIdentifier: 
-  id: -3
-  nombreCarta: Perdida cultivos
-  descripcionCarta: Se pierde parte del cultivo
-  textoIzq: Era lo mejor
-  textoDer: Era lo mejor
-  imagen: {fileID: 21300000, guid: 8fd848557999ec24d966c0cb8ebfab8f, type: 3}
+  id: 52
+  nombreCarta: Zanahorias mutantes
+  descripcionCarta: Unas zanahorias mutantes arrasan con parte del poblado
+  textoIzq: LLAMAD AL EJERCITO
+  textoDer: Voy a por la escopeta
+  imagen: {fileID: 21300000, guid: f978add96f34963409f7817a312c0ca0, type: 3}
   izqElect: 0
   izqGente: 0
-  izqFelic: -1
+  izqFelic: -3
   izqDinero: -1
-  izqComida: 0
+  izqComida: -1
   derElect: 0
   derGente: 0
   derFelic: -1
   derDinero: -1
-  derComida: 0
+  derComida: -1
   sigIDizq: 0
   sigIDder: 0
   aleatoria: 1

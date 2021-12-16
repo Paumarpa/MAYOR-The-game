@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: -8_ConsecuenciasManifestaciones2
+  m_Name: 54_ConsecuenciaTelescopio1
   m_EditorClassIdentifier: 
-  id: -8
-  nombreCarta: Manifestaciones pacificas
-  descripcionCarta: "Las manifestaciones pacificas no resultan de mucho inter\xE9s
-    para la prensa ergo tampoco para el gobierno"
-  textoIzq: Pues ni fu ni fa
-  textoDer: Tendria que cogido el garrote
-  imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
+  id: 54
+  nombreCarta: METEORITO
+  descripcionCarta: ALCALDE UN METEORITO IMPACTARA CONTRA LA MONTANA DE AL LADO EN
+    2 MINUTOS
+  textoIzq: SALVESE QUIEN PUEDA
+  textoDer: AAAAAAAAAAAH!!!!
+  imagen: {fileID: 21300000, guid: 083aceb3917068e42bbce195300d2c28, type: 3}
   izqElect: 0
-  izqGente: 0
-  izqFelic: 0
+  izqGente: -2
+  izqFelic: -2
   izqDinero: 0
   izqComida: 0
   derElect: 0
@@ -29,6 +29,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
-  aleatoria: 1
+  sigIDizq: -9
+  sigIDder: -9
+  aleatoria: 0

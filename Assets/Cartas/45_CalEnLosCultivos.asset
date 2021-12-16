@@ -22,13 +22,13 @@ MonoBehaviour:
   izqElect: 0
   izqGente: 0
   izqFelic: -3
-  izqDinero: 3
+  izqDinero: 2
   izqComida: 2
   derElect: 0
   derGente: 0
   derFelic: -3
-  derDinero: 3
+  derDinero: 2
   derComida: 2
-  sigIDizq: -2
-  sigIDder: -3
+  sigIDizq: 52
+  sigIDder: 53
   aleatoria: 0

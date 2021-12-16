@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: -5_ConsecuenciaTelescopio2
+  m_Name: 55_ConsecuenciaTelescopio2
   m_EditorClassIdentifier: 
-  id: -5
+  id: 55
   nombreCarta: "\xBF\xBF\xBF???"
   descripcionCarta: Un fuerte estruendo se escucha a la lejania
   textoIzq: Joer la fabada como pega no?
