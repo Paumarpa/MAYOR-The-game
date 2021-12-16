@@ -22,7 +22,7 @@ MonoBehaviour:
   izqElect: 0
   izqGente: 2
   izqFelic: 0
-  izqDinero: 1
+  izqDinero: -1
   izqComida: 0
   derElect: 0
   derGente: 2

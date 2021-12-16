@@ -20,7 +20,7 @@ MonoBehaviour:
   textoDer: Inaugurar un espacio natural protegido
   imagen: {fileID: 21300000, guid: 586d5ab7ecdc3fa48b20325db2004b04, type: 3}
   izqElect: 0
-  izqGente: -1
+  izqGente: -2
   izqFelic: 1
   izqDinero: -1
   izqComida: 0

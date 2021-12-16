@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
-  m_Name: -2_ConsecuenciasCal1
+  m_Name: 56_ConsecuenciasBarbero1
   m_EditorClassIdentifier: 
-  id: -2
-  nombreCarta: Zanahorias mutantes
-  descripcionCarta: Unas zanahorias mutantes arrasan con parte del poblado
-  textoIzq: LLAMAD AL EJERCITO
-  textoDer: Voy a por la escopeta
-  imagen: {fileID: 21300000, guid: f978add96f34963409f7817a312c0ca0, type: 3}
+  id: 56
+  nombreCarta: Caso resuelto
+  descripcionCarta: Se descubre que el barbero del pueblo era en realidad un asesino
+  textoIzq: UFF QUE PELIGRO
+  textoDer: QUE MIEDO
+  imagen: {fileID: 21300000, guid: 4e3fc81341988bb4d9c8459ddb0d0344, type: 3}
   izqElect: 0
-  izqGente: 0
-  izqFelic: -3
-  izqDinero: -1
-  izqComida: -1
+  izqGente: 1
+  izqFelic: 0
+  izqDinero: 0
+  izqComida: 0
   derElect: 0
-  derGente: 0
-  derFelic: -1
-  derDinero: -1
-  derComida: -1
+  derGente: 1
+  derFelic: 1
+  derDinero: 0
+  derComida: 0
   sigIDizq: 0
   sigIDder: 0
   aleatoria: 1

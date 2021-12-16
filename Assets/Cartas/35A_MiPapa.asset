@@ -21,7 +21,7 @@ MonoBehaviour:
   textoDer: Que lo abra que me voy a poner como un titan
   imagen: {fileID: 21300000, guid: 633a8f418d4f72f498212fae77686247, type: 3}
   izqElect: 0
-  izqGente: 0
+  izqGente: 1
   izqFelic: -1
   izqDinero: 0
   izqComida: 0

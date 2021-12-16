@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 22A_FalloElectrico
   m_EditorClassIdentifier: 
-  id: 3
+  id: 22
   nombreCarta: Fallo Electrico
   descripcionCarta: "Est\xE1n ocurriendo fallos en el alumbrado de la ciudad, los
     aldeanos exigen que se solucione"
@@ -29,6 +29,6 @@ MonoBehaviour:
   derFelic: 1
   derDinero: -3
   derComida: 0
-  sigIDizq: 16
-  sigIDder: 16
+  sigIDizq: 0
+  sigIDder: 0
   aleatoria: 1

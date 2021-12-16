@@ -27,7 +27,7 @@ MonoBehaviour:
   derElect: 1
   derGente: 1
   derFelic: -1
-  derDinero: 2
+  derDinero: 1
   derComida: 0
   sigIDizq: 0
   sigIDder: 0

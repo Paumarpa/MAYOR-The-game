@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 23_SpamLlamadas
   m_EditorClassIdentifier: 
-  id: 1
+  id: 23
   nombreCarta: Spam
   descripcionCarta: Las llamadas de las centrales electricas a todas horas nos estan
     molestando demasiado
@@ -27,7 +27,7 @@ MonoBehaviour:
   derElect: -1
   derGente: 0
   derFelic: -1
-  derDinero: 0
+  derDinero: -1
   derComida: 0
   sigIDizq: 3
   sigIDder: 2

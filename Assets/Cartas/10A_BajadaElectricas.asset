@@ -20,7 +20,7 @@ MonoBehaviour:
   imagen: {fileID: 21300000, guid: 150712890f7684f498962b8b3d9d251c, type: 3}
   izqElect: 2
   izqGente: 0
-  izqFelic: 2
+  izqFelic: 1
   izqDinero: 1
   izqComida: 0
   derElect: 2

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dbe6c079368ea4b8f424c3303696be, type: 3}
   m_Name: 24_NitratoDeAmonio
   m_EditorClassIdentifier: 
-  id: 2
+  id: 24
   nombreCarta: Nitrato de que?
   descripcionCarta: Los horticultores piden que compre Nitrato de Amonio como fertilizante
   textoIzq: Ellos sabran lo que hacen

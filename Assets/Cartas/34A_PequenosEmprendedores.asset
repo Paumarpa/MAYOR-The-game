@@ -21,7 +21,7 @@ MonoBehaviour:
   imagen: {fileID: 21300000, guid: 0d9f2532fa7867745971e14f01f1c965, type: 3}
   izqElect: -1
   izqGente: 3
-  izqFelic: 2
+  izqFelic: 1
   izqDinero: 2
   izqComida: -1
   derElect: 2
