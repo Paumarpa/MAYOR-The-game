@@ -5449,8 +5449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -530, y: 353}
-  m_SizeDelta: {x: 333.8023, y: 41.998}
+  m_AnchoredPosition: {x: -323, y: 201.51}
+  m_SizeDelta: {x: 250.6193, y: 85.0238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354141505
 MonoBehaviour:
@@ -5823,7 +5823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &428370839
 Animator:
   serializedVersion: 3
@@ -7055,7 +7055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555, y: 315}
+  m_AnchoredPosition: {x: 366, y: 190.70001}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890154511
@@ -7797,6 +7797,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f8a0bcc31364d54aa9bd7a7376689ad, type: 2}
   - {fileID: 11400000, guid: f59b4b8dfd10a4f48bf6512ccfc2c8f1, type: 2}
   - {fileID: 11400000, guid: 2b40e14cf600c5b45948186ebc1b87f2, type: 2}
+  - {fileID: 11400000, guid: 97b66c3888f16754d896a0eb791bf1cc, type: 2}
+  - {fileID: 11400000, guid: 36e5275995a1deb4da9cfec3ddb2d91f, type: 2}
+  - {fileID: 11400000, guid: f232f957e501302499a63efba43822a2, type: 2}
+  - {fileID: 11400000, guid: c055a78ab72519546ab9bdf3321e3778, type: 2}
+  - {fileID: 11400000, guid: ef282bd7326fd764f83f0eb680b2d1fe, type: 2}
+  - {fileID: 11400000, guid: cdec60eb8a6ad32499b8f7b20836ed88, type: 2}
+  - {fileID: 11400000, guid: 411b5b8b6c5a73a4c9a8c8a1d7d17cae, type: 2}
+  - {fileID: 11400000, guid: 88a9d50d2717e374bb3b9ad6a533bcad, type: 2}
+  - {fileID: 11400000, guid: 3f6c766fcd429434e8fe6ecc1b25f66b, type: 2}
   - {fileID: 11400000, guid: 225a0b21d61790f4fa505fb10c722dff, type: 2}
   - {fileID: 11400000, guid: 663cdbc1420665f4685a2b4032b0551c, type: 2}
   - {fileID: 11400000, guid: 0f4416d42c8482b49a411f04d61e5165, type: 2}
@@ -7807,15 +7816,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2273f05db8bde96419b8cb83529ef436, type: 2}
   - {fileID: 11400000, guid: fc97c6eb13c6cac4b9b2c0fc7e91554a, type: 2}
   - {fileID: 11400000, guid: c95cd6667099e8949b8fd8c708d9ab3f, type: 2}
-  - {fileID: 11400000, guid: 97b66c3888f16754d896a0eb791bf1cc, type: 2}
-  - {fileID: 11400000, guid: 36e5275995a1deb4da9cfec3ddb2d91f, type: 2}
-  - {fileID: 11400000, guid: f232f957e501302499a63efba43822a2, type: 2}
-  - {fileID: 11400000, guid: c055a78ab72519546ab9bdf3321e3778, type: 2}
-  - {fileID: 11400000, guid: ef282bd7326fd764f83f0eb680b2d1fe, type: 2}
-  - {fileID: 11400000, guid: cdec60eb8a6ad32499b8f7b20836ed88, type: 2}
-  - {fileID: 11400000, guid: 411b5b8b6c5a73a4c9a8c8a1d7d17cae, type: 2}
-  - {fileID: 11400000, guid: 88a9d50d2717e374bb3b9ad6a533bcad, type: 2}
-  - {fileID: 11400000, guid: 3f6c766fcd429434e8fe6ecc1b25f66b, type: 2}
 --- !u!1 &1021894475
 GameObject:
   m_ObjectHideFlags: 0
@@ -8070,7 +8070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058411163}
   - component: {fileID: 1058411162}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Baraja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8117,15 +8117,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6c096ea4635b644f841b8a2bb0bb696, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.52, y: 0.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1058411163
@@ -8136,8 +8136,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058411161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14714359, y: 0.1053201, z: -1444.4452}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -8225,7 +8225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 568.5, y: 354.3}
+  m_AnchoredPosition: {x: 379.5, y: 230}
   m_SizeDelta: {x: 141.5747, y: 33.9966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118608947

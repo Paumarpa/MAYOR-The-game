@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 67
   nombreCarta: Derrota
-  descripcionCarta: Te pasaste de felicidad y el pueblo se abalanzo sobre ti
+  descripcionCarta: Te pasaste de felicidad y la gente del pueblo te abrazo tan fuerte
+    que muriste
   textoIzq: 
   textoDer: 
   imagen: {fileID: 0}

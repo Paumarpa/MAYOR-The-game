@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Encuentras una calavera dorada
   textoIzq: Recojo la calavera
   textoDer: Eeeeh voy a llamar a la policia
-  imagen: {fileID: 21300000, guid: 7c0e2fc225ef1c74989a22d3e9251e43, type: 3}
+  imagen: {fileID: 21300000, guid: 09c7c138c8396274085b7176f073d7a0, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
@@ -28,6 +28,6 @@ MonoBehaviour:
   derFelic: 0
   derDinero: 0
   derComida: 0
-  sigIDizq: 0
-  sigIDder: 0
+  sigIDizq: 35
+  sigIDder: 35
   aleatoria: 1

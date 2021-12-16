@@ -277,49 +277,49 @@ public class DeslizarA : MonoBehaviour
         // Si es MENOR O IGUAL a 0 saltamos a una carta concreta de derrota
         if (statElectricidad.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[51];
+            cs.cartaDatos = cartasQueUsamos[60];
         }
         else if (statGente.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[52];
+            cs.cartaDatos = cartasQueUsamos[61];
         }
         else if (statFelicidad.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[53];
+            cs.cartaDatos = cartasQueUsamos[62];
         }
         else if (statDinero.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[54];
+            cs.cartaDatos = cartasQueUsamos[63];
         }
         else if (statComida.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[55];
+            cs.cartaDatos = cartasQueUsamos[64];
         }
 
         // Si es MAYOR que 1 saltamos a una carta concreta de derrota
         else if (statElectricidad.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[56];
+            cs.cartaDatos = cartasQueUsamos[65];
             statElectricidad.ValorStat = 1.1f;
         }
         else if (statGente.ValorStat <= 0)
         {
-            cs.cartaDatos = cartasQueUsamos[57];
+            cs.cartaDatos = cartasQueUsamos[66];
             statGente.ValorStat = 1.1f;
         }
         else if (statFelicidad.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[58];
+            cs.cartaDatos = cartasQueUsamos[67];
             statFelicidad.ValorStat = 1.1f;
         }
         else if (statDinero.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[59];
+            cs.cartaDatos = cartasQueUsamos[68];
             statDinero.ValorStat = 1.1f;
         }
         else if (statComida.ValorStat > 1)
         {
-            cs.cartaDatos = cartasQueUsamos[60];
+            cs.cartaDatos = cartasQueUsamos[69];
             statComida.ValorStat = 1.1f;
         }
     }
