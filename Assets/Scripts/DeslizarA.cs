@@ -139,7 +139,6 @@ public class DeslizarA : MonoBehaviour
                     PlayerPrefs.SetInt("player_score", DiasTranscurridos);
                     SceneManager.LoadScene("LeaderBoard");
                 }
-
                 ChangeStats(false);
                 int aux = cs.izquierda();
                 RandomGenerator();
@@ -250,9 +249,10 @@ public class DeslizarA : MonoBehaviour
 
     private bool esDerrota()
     {
-        if ((statElectricidad.ValorStat > 0 && statGente.ValorStat > 0 && statFelicidad.ValorStat > 0 && statDinero.ValorStat > 0 && statComida.ValorStat > 0 &&
-            statElectricidad.ValorStat <= 1 && statGente.ValorStat <= 1 && statFelicidad.ValorStat <= 1 && statDinero.ValorStat <= 1 && statComida.ValorStat <= 1))
+        if ((statElectricidad.ValorStat > -0.3f && statGente.ValorStat > -0.3f && statFelicidad.ValorStat > -0.3f && statDinero.ValorStat > -0.3f && statComida.ValorStat > -0.3f &&
+            statElectricidad.ValorStat <= 1.3f && statGente.ValorStat <= 1.3f && statFelicidad.ValorStat <= 1.3f && statDinero.ValorStat <= 1.3f && statComida.ValorStat <= 1.3f))
             return false;
+        //Debug.Log((statElectricidad.ValorStat + cs.cartaDatos.derElect * 0.1f) + "E------------- " + (statGente.ValorStat + cs.cartaDatos.derGente * 0.1f) + "G------------- " + (statFelicidad.ValorStat + cs.cartaDatos.derFelic * 0.1f) + "F------------- " + (statDinero.ValorStat + cs.cartaDatos.derDinero * 0.1f) + "D------------- " + (statComida.ValorStat + cs.cartaDatos.derComida) * 0.1f);
         return true;
     }
 
@@ -274,53 +274,63 @@ public class DeslizarA : MonoBehaviour
             statDinero.ValorStat += cs.cartaDatos.izqDinero * 0.1f;
             statComida.ValorStat += cs.cartaDatos.izqComida * 0.1f;
         }
-        // Si es MENOR O IGUAL a 0 saltamos a una carta concreta de derrota
-        if (statElectricidad.ValorStat <= 0)
+        // Si es MENOR O IGUAL a -0.3 saltamos a una carta concreta de derrota
+        if (statElectricidad.ValorStat <= -0.3f)
         {
+            //Debug.Log("Perder E");
             cs.cartaDatos = cartasQueUsamos[60];
         }
-        else if (statGente.ValorStat <= 0)
+        else if (statGente.ValorStat <= -0.3f)
         {
+            //Debug.Log("Perder G");
             cs.cartaDatos = cartasQueUsamos[61];
         }
-        else if (statFelicidad.ValorStat <= 0)
+        else if (statFelicidad.ValorStat <= -0.3f)
         {
+            //Debug.Log("Perder F");
             cs.cartaDatos = cartasQueUsamos[62];
         }
-        else if (statDinero.ValorStat <= 0)
+        else if (statDinero.ValorStat <= -0.3f)
         {
+            //Debug.Log("Perder D");
             cs.cartaDatos = cartasQueUsamos[63];
         }
-        else if (statComida.ValorStat <= 0)
+        else if (statComida.ValorStat <= -0.3f)
         {
+            //Debug.Log("Perder C");
             cs.cartaDatos = cartasQueUsamos[64];
         }
 
-        // Si es MAYOR que 1 saltamos a una carta concreta de derrota
-        else if (statElectricidad.ValorStat > 1)
+        // Si es MAYOR que 1.3 saltamos a una carta concreta de derrota
+        else if (statElectricidad.ValorStat > 1.3f)
         {
+            Debug.Log("Pasarse E");
             cs.cartaDatos = cartasQueUsamos[65];
-            statElectricidad.ValorStat = 1.1f;
+            statElectricidad.ValorStat = 1.31f;
         }
-        else if (statGente.ValorStat <= 0)
+        else if (statGente.ValorStat > 1.3f)
         {
+            //Debug.Log("Pasarse G");
             cs.cartaDatos = cartasQueUsamos[66];
-            statGente.ValorStat = 1.1f;
+            statGente.ValorStat = 1.31f;
         }
-        else if (statFelicidad.ValorStat > 1)
+        else if (statFelicidad.ValorStat > 1.3f)
         {
+            //Debug.Log("Pasarse F");
             cs.cartaDatos = cartasQueUsamos[67];
-            statFelicidad.ValorStat = 1.1f;
+            statFelicidad.ValorStat = 1.31f;
         }
-        else if (statDinero.ValorStat > 1)
+        else if (statDinero.ValorStat > 1.3f)
         {
+            //Debug.Log("Pasarse D");
             cs.cartaDatos = cartasQueUsamos[68];
-            statDinero.ValorStat = 1.1f;
+            statDinero.ValorStat = 1.31f;
         }
-        else if (statComida.ValorStat > 1)
+        else if (statComida.ValorStat > 1.3f)
         {
+            //Debug.Log("Pasarse C");
             cs.cartaDatos = cartasQueUsamos[69];
-            statComida.ValorStat = 1.1f;
+            statComida.ValorStat = 1.31f;
         }
     }
 
