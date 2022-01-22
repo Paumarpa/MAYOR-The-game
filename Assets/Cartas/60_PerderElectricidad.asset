@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 60
   nombreCarta: Derrota
-  descripcionCarta: "Te quedaste sin electricidad y el pueblo se revel\xF3 en tu
-    contra"
+  descripcionCarta: Llega el invierno y sin electricidad el pueblo se congela
   textoIzq: ...
   textoDer: ...
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 72751dbe529e15747b0295fb28ab9a16, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

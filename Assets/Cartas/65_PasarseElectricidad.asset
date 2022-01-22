@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 65
   nombreCarta: Derrota
-  descripcionCarta: "Te pasate de electricidad y te cay\xF3 un rayo"
+  descripcionCarta: El pueblo genera tanta electricidad que un inversor se fija y
+    lo comra. Estas despedidx.
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 588af287e7c4b3347ad6b68b56cb7987, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
