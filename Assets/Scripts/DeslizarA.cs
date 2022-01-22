@@ -22,6 +22,12 @@ public class DeslizarA : MonoBehaviour
     public ModificaTamaño statComida;
     public int DiasTranscurridos = 0;
 
+    public SpriteRenderer circuloElectricidad;
+    public SpriteRenderer circuloPoblacion;
+    public SpriteRenderer circuloFelicidad;
+    public SpriteRenderer circuloDinero;
+    public SpriteRenderer circuloComida;
+
     SpriteRenderer spr;
     public float velCarta = .5f;
 
@@ -90,9 +96,18 @@ public class DeslizarA : MonoBehaviour
             lastRoutine = StartCoroutine(RotateCard(0.02f));
         }
 
+        if (carta.transform.position.x > -2 & carta.transform.position.x < 2)
+        {
+            circuloElectricidad.color = Color.grey;
+            circuloPoblacion.color = Color.grey;
+            circuloFelicidad.color = Color.grey;
+            circuloDinero.color = Color.grey;
+            circuloComida.color = Color.grey;
+        }
 
         if (carta.transform.position.x > 2) //PARA LA DERECHA
         {
+            ChangeCircleStats();
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoDer;
@@ -126,6 +141,7 @@ public class DeslizarA : MonoBehaviour
         }
         else if (carta.transform.position.x < -2)   //PARA LA IZQUIERDA
         {
+            ChangeCircleStats();
 
             cs.descripcionLado.enabled = true;
             cs.descripcionLado.text = cs.cartaDatos.textoIzq;
@@ -254,6 +270,48 @@ public class DeslizarA : MonoBehaviour
             return false;
         //Debug.Log((statElectricidad.ValorStat + cs.cartaDatos.derElect * 0.1f) + "E------------- " + (statGente.ValorStat + cs.cartaDatos.derGente * 0.1f) + "G------------- " + (statFelicidad.ValorStat + cs.cartaDatos.derFelic * 0.1f) + "F------------- " + (statDinero.ValorStat + cs.cartaDatos.derDinero * 0.1f) + "D------------- " + (statComida.ValorStat + cs.cartaDatos.derComida) * 0.1f);
         return true;
+    }
+
+    private void ChangeCircleStats()
+    {
+        
+        
+        if (carta.transform.position.x > 2)
+        {
+            if (cs.cartaDatos.derElect < 0){circuloElectricidad.color = Color.red;}
+            if (cs.cartaDatos.derElect > 0) { circuloElectricidad.color = Color.green; }
+
+            if (cs.cartaDatos.derGente < 0) { circuloPoblacion.color = Color.red; }
+            if (cs.cartaDatos.derGente > 0) { circuloPoblacion.color = Color.green; }
+
+            if (cs.cartaDatos.derFelic < 0) { circuloFelicidad.color = Color.red; }
+            if (cs.cartaDatos.derFelic > 0) { circuloFelicidad.color = Color.green; }
+
+            if (cs.cartaDatos.derDinero < 0) { circuloDinero.color = Color.red; }
+            if (cs.cartaDatos.derDinero > 0) { circuloDinero.color = Color.green; }
+
+            if (cs.cartaDatos.derComida < 0) { circuloComida.color = Color.red; }
+            if (cs.cartaDatos.derComida > 0) { circuloComida.color = Color.green; }
+
+        }
+        if (carta.transform.position.x < -2)
+        {
+            if (cs.cartaDatos.izqElect < 0) { circuloElectricidad.color = Color.red; }
+            if (cs.cartaDatos.izqElect > 0) { circuloElectricidad.color = Color.green; }
+
+            if (cs.cartaDatos.izqGente < 0) { circuloPoblacion.color = Color.red; }
+            if (cs.cartaDatos.izqGente > 0) { circuloPoblacion.color = Color.green; }
+
+            if (cs.cartaDatos.izqFelic < 0) { circuloFelicidad.color = Color.red; }
+            if (cs.cartaDatos.izqFelic > 0) { circuloFelicidad.color = Color.green; }
+
+            if (cs.cartaDatos.izqDinero < 0) { circuloDinero.color = Color.red; }
+            if (cs.cartaDatos.izqDinero > 0) { circuloDinero.color = Color.green; }
+
+            if (cs.cartaDatos.izqComida < 0) { circuloComida.color = Color.red; }
+            if (cs.cartaDatos.izqComida > 0) { circuloComida.color = Color.green; }
+        }
+
     }
 
     private void ChangeStats(bool der)
