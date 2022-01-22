@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: Te pasaste de comida y las ratas se revelaron en tu contra
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: d3ab100811cf1244fbed516859895141, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
