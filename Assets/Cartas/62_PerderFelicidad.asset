@@ -18,7 +18,7 @@ MonoBehaviour:
     contra
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: fffcf15bd1456a74abc13d34594ed364, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
     que muriste
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 70db88ef780a33846b0ccea4b0a52cae, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
