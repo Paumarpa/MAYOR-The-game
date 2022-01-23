@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   nombreCarta: Derrota
-  descripcionCarta: "Te quedaste sin gennte y nadie? se revel\xF3 en tu contra"
+  descripcionCarta: "Te quedaste sin gente y nadie? se revel\xF3 en tu contra"
   textoIzq: ...
   textoDer: ...
   imagen: {fileID: 0}
