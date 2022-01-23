@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 63
   nombreCarta: Derrota
-  descripcionCarta: "Te quedaste sin dinero y el pueblo se revel\xF3 en tu contra"
+  descripcionCarta: Te quedaste sin dinero, hay que venderlo todo para mudarse a
+    otro lugar
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 6b126152c2eb4cb4da2dd2e6972b6e4d, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
