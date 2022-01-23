@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 68
   nombreCarta: Derrota
-  descripcionCarta: Te pasaste de dinero y el las empresas se revelaron en tu contra
+  descripcionCarta: Te pasaste de dinero y las empresas se revelaron en tu contra
   textoIzq: 
   textoDer: 
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: b6dd77e90fc03d94fbb5d322e335cb1a, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
