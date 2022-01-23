@@ -17,7 +17,7 @@ MonoBehaviour:
   descripcionCarta: "Te quedaste sin gente y nadie? se revel\xF3 en tu contra"
   textoIzq: ...
   textoDer: ...
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: fffc021a082c19d4d85f78e7c02fc632, type: 3}
   izqElect: 0
   izqGente: 0
   izqFelic: 0
